@@ -1,0 +1,14 @@
+/*
+ Theme Name:   Maestros Consagrados
+ Theme URI:    http://maestrosconsagrados.com
+ Description:  Tema diseñado para la tienda esoterica maestros consagrados.
+ Author:       Brumker studios
+ Author URI:   http://brumker.com
+ Template:     Maestros_theme
+ Version:      1.0.0
+ Tags:         responsive, flat, woocommerce, Barra lateral izquierda, Fondo personalizado, Colores personalizados, Cabecera personalizada, custom-menu, Imágenes destacadas.
+ Text Domain:  Maestros consagrados
+*/
+#home{
+  background:url(./img/home_bg_xl.jpg) center;
+}
