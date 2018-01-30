@@ -50,29 +50,43 @@
                                 </div>
                         </div>
                         <div class="row">
-                                <?php if( have_posts() ) : ?>
-                                        <?php while( have_posts() ) : the_post() ?>
-                                                <a href='<?php the_permalink() ?>'>
-                                                        <div class="col-lg-2">
-                                                                <?php
-                                                                if (has_post_thumbnail()){
-                                                                        the_post_thumbnail();
-                                                                }
-                                                                ?>
-                                                                <div class="d-flex align-items-center">
-                                                                        <h5 class="text-white text-center"><?php the_title() ?></h5>
-                                                                </div>
-
-                                                        </div>
-                                                </a>
-                                        <?php endwhile ?>
-                                <?php else : ?>
-                                        <p>Oh No, there are no posts!</p>
-                                <?php endif ?>
-
-
+                          <!-- loop con excerpt -->
+                          <?php $CurrentPage = get_query_var('paged');
+                          $args = array ('posts_per_page' => '7',
+                          'paged' => $CurrentPage);
+                          $filter_posts = new WP_Query($args);
+                          if($filter_posts->have_posts() ) : ?>
+                          <?php while( $filter_posts->have_posts() ) : $filter_posts->the_post() ?>
+                            <div class="col-lg-3 col-md-6 col-xs-12 pb-3">
+                              <div class="card">
+                                <a class="text-white" href='<?php the_permalink() ?>'>
+                                  <?php
+                                  if (has_post_thumbnail()){
+                                    the_post_thumbnail();
+                                  }
+                                  ?>
+                                  <h5 class="card-title text-white"><?php the_title() ?></h5>
+                                </a>
+                              </div>
+                            </div>
                         </div>
-
+                        <?php endwhile ?>
+                        <!-- paginacion -->
+                        <div class="col-12">
+                          <nav aria-label="page navigation example">
+                            <ul class="pagination justify-content-center">
+                              <?php echo paginate_links(array('total' => $filter_posts->max_num_pages )); ?>
+                            </ul>
+                          </nav>
+                        </div>
+                      <?php else : ?>
+                        <div class="row">
+                          <div class="col-lg-9 col-md-6 col-xs-12">
+                            <h1 class="text-center">Oops no tenemos publicaciones aún.</h1>
+                          </div>
+                        </div>
+                      <?php endif; wp_reset_postdata(); //reset del loop ?>
+                        </div>
                 </div>
         </section>
 <?php get_footer(); ?>
