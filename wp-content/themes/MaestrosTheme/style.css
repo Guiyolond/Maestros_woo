@@ -12,13 +12,38 @@
 #home{
   background:url(./img/home_bg_xl.jpg) center;
 }
+
+#horoscopo{
+  background: url(./img/horoscopo_bg_xl.jpg) center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.signos{
+  background-color: #0A0102;
+}
 .bg-gray{
   background-color: #A1B59D;
 }
-h4{
-  font-family: 'Oswald', sans-serif;
-}
+
 .navbar-light .navbar-toggler{border-color:none;}
 .navbar-light .navbar-toggler-icon{
   background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(191,143,29)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+h1{
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 100px;
+  font-weight: 700;
+}
+h4{
+  font-family: 'Oswald', sans-serif;
+}
+h5{
+text-align: center !important;
+}
+.rounded{
+  border-radius: .75rem !important;
+}
+a {
+  color: white !important;
+  text-decoration: none !important;
+  }
