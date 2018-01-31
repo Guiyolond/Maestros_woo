@@ -18,17 +18,34 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+#nosotros{
+  background:  url(./img/nosotros_bg_xl.jpg) center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#nosotros2{
+  background:  url(./img/nosotrosdos_bg_xl.jpg) center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 890px;
+}
 .signos{
   background-color: #0A0102;
 }
 .bg-gray{
   background-color: #A1B59D;
 }
-
 .navbar-light .navbar-toggler{border-color:none;}
 .navbar-light .navbar-toggler-icon{
   background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(191,143,29)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.rounded{
+  border-radius: .75rem !important;
+}
+.my_margin{
+  margin-top: 25rem;
+}
+
 h1{
   font-family: 'Oswald', sans-serif !important;
   font-size: 100px;
@@ -40,9 +57,7 @@ h4{
 h5{
 text-align: center !important;
 }
-.rounded{
-  border-radius: .75rem !important;
-}
+
 a {
   color: white !important;
   text-decoration: none !important;
