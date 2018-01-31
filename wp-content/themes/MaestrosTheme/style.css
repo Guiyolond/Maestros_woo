@@ -12,7 +12,6 @@
 #home{
   background:url(./img/home_bg_xl.jpg) center;
 }
-
 #horoscopo{
   background: url(./img/horoscopo_bg_xl.jpg) center;
   background-size: 100%;
@@ -50,13 +49,11 @@
 .my_margin{
   margin-top: 25rem;
 }
-
 .form-control {
-
     color: rgba(255, 255, 255, 1);
     background-color: #1b1e21 !important;
     border-radius: .75rem !important;
-
+}
 h1{
   font-family: 'Oswald', sans-serif !important;
   font-size: 100px;

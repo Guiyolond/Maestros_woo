@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="<?php bloginfo(stylesheet_url); ?>" >
     <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   </head>
   <body>
 
@@ -20,10 +19,22 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-white" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Link</a>
+                <a class="nav-link text-white" href="#horoscopo">Horoscopo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#espiritual">Guía espiritual</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contacto">contacto</a>
               </li>
             </ul>
           </div>

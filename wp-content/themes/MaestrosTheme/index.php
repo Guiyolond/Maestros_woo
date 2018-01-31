@@ -109,7 +109,7 @@
                 </div>
         </div>
 </section>
-<section class="signos container-fluid">
+<section class="signos container-fluid" id="servicios">
         <div class="container">
                 <div class="row">
                         <div class="col-lg-6 offset-lg-6">
@@ -154,7 +154,7 @@
         </div>
 </section>
 <!--Contacto-->
-<section class="bg-gray container-fluid">
+<section class="bg-gray container-fluid" id="contacto">
         <div class="container">
                 <div class="row">
                         <div class="col-12">
