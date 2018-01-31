@@ -49,6 +49,16 @@
 .navbar-light .navbar-toggler-icon{
   background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(191,143,29)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.navbar-light .navbar-toggler {
+  border-color: rgb(191,143,29);
+}
+.nav-item{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 30%;
+}
+.nav-item:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .rounded{
   border-radius: .75rem !important;
 }
