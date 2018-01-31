@@ -19,22 +19,22 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-white" href="#home">Home</a>
+                <a data-scroll class="nav-link text-white" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#horoscopo">Horoscopo</a>
+                <a data-scroll class="nav-link text-white" href="#horoscopo">Horoscopo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#nosotros">Nosotros</a>
+                <a data-scroll class="nav-link text-white" href="#nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#servicios">Servicios</a>
+                <a data-scroll class="nav-link text-white" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#espiritual">Guía espiritual</a>
+                <a data-scroll class="nav-link text-white" href="#espiritual">Guía espiritual</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#contacto">contacto</a>
+                <a data-scroll class="nav-link text-white" href="#contacto">contacto</a>
               </li>
             </ul>
           </div>
