@@ -1,4 +1,7 @@
     <h2>footer</h2>
+    <!-- skype -->
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+    <!-- smooth -->
     <script src="<?php bloginfo(stylesheet_directory); ?>/js/smooth-scroll.min.js"></script>
     <script type="text/javascript">
       var scroll = new SmoothScroll('a[href*="#"]', {

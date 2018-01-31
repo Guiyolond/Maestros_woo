@@ -15,14 +15,22 @@
 <section class="bg-gray">
         <div class="container">
                 <div class="row pt-3 pb-3">
-                        <div class="col text-center pt-3">
+                        <div class="col-sm-12 col-md-6 text-center pt-3">
                                 <h4 class="text-white">VEA SU HORÓSCOPO PODEROSO SEMANAL GRATIS</h4>
                                 <p class="text-white">Tenemos un nuevo horóscopo Poderoso cada semana<br> preparado para usted por los Mejores Maestros Consagrados</p>
                         </div>
-                        <div class="col text-center pt-3">
-                                <!-- Implementación Skype-->
-                                <img src="" height="50px" width="75px" alt="Boton llamadas Skype" class="rounded bg-success" >
-                                <p class="text-white">La llamada no tiene ningún costo, su operador<br> telefónico puede aplicar los cargos estipulados</p>
+                        <div class="col-sm-12 col-md-6 text-center pt-3">
+                                <div class="row justify-content-center">
+                                        <div class="col-5">
+                                                <div class="skype-chat">
+                                                        <span class="skype-button rounded" data-contact-id="Alejandro Serna" data-color="#00A941">
+                                                                <button type="button" class="btn btn-success btn-lg btn-block"><img src="<?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
+                                                        </span>
+                                                        <span class="skype-chat" data-color-message="#00A941"></span>
+                                                </div>
+                                        </div>
+                                </div>
+                                <p class="text-white">La llamada no tiene ningún costo.</p>
                         </div>
                 </div>
         </div>
