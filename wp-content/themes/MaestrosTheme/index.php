@@ -43,14 +43,14 @@
                         <div class="col-12">
                                 <h1 class="text-center text-white pb-5">HORÓSCOPO</h1><br>
                         </div>
-                        <div class="rounded bg-dark p-4">
+                        <div class="rounded bg-gray-dark p-4">
                                 <p class="text-white">La Astrología es una ciencia que estudia la influencia del sistema solar y los movimientos de los astros sobre lo que ocurre en la Tierra, la posición de cada uno de estos en el momento y tiempo exacto del nacimiento de una persona, país, empresa o cualquier entidad y que tiene gran influencia sobre su personalidad, prosperidad, salud, amor, profesión y evolución de su destino. Para realizar este estudio se utiliza el sistema geocéntrico, es el momento en que los demás planetas giran alrededor de la Tierra.</p>
                         </div>
                 </div>
         </div>
 </section>
 <!-- Signos Zodiak -->
-<section class="signos container-fluid pb-3">
+<section class="bg-signos container-fluid pb-3">
         <div class="container">
                 <div class="row">
                         <div class="col-12 d-flex justify-content-center pt-5 pb-3">
@@ -74,7 +74,6 @@
                                                         }
                                                         ?>
                                                 </div>
-
                                                 <h5 class="card-title text-white"><?php the_title() ?></h5>
                                         </a>
                                 </div>
@@ -101,7 +100,7 @@
                         <div class="col-lg-6 offset-lg-6">
                                 <h1 class="text-white pt-5 pb-5">NOSOTROS</h1><br>
                         </div>
-                        <div class="col-5 rounded bg-dark p-4">
+                        <div class="col-5 rounded bg-gray-dark p-4">
                                 <p class="text-white">Maestros Consagrados, Entregamos nuestras vidas al servicio del prójimo, somos descendientes de tribus antiguas, especializados en diferentes ciencias, de esta manera podemos ofrecer asesoría directa en campos como: la eclíptica, la astrología, la medicina natural, la Botánica, el espiritismo, La auto sanación, la parapsicología, la metafísica, las cartas sagradas y practicas avanzadas de magia y hechicería, pretendemos asesorar de una manera integral y completa a todas aquellas personas que se encuentran experimentando algún tipo de sufrimiento en su cuerpo físico o a nivel espiritual, con prácticas heredadas de nuestros antepasados, adoptamos el celibato como principio a nuestros ancestros, consagrándonos como maestros dadores de los resultados más efectivos y ofrecemos nuestra espiritualidad consagrada para darle solución a todo.</p>
                         </div>
                 </div>
@@ -111,13 +110,13 @@
 <section id="nosotros2" class="container-fluid">
         <div class="container">
                 <div class="row">
-                        <div class="col-lg-6 offset-lg-6 rounded bg-dark p-4 my_margin">
+                        <div class="col-lg-6 offset-lg-6 rounded bg-gray-dark p-4 my_margin">
                                 <p class="text-white">Nuestras terapias avanzadas están enfocadas a tratar los aspectos más críticos que pueden llegar a afectar a una persona solitaria, así como también a una pareja, una familia o incluso una comunidad. Durante el tiempo que se lleve este proceso es necesario el total compromiso de la persona interesada y el cumplimiento de cada uno de los métodos implementados, ya que con un verdadero compromiso se podra obtner los resultados esperados podrás conseguir lo que desees y el objetivo que tanto anhelas de la mano de los verdaderos Maestros Consagrados.</p>
                         </div>
                 </div>
         </div>
 </section>
-<section class="signos container-fluid" id="servicios">
+<section class="bg-gray-dark container-fluid" id="servicios">
         <div class="container">
                 <div class="row">
                         <div class="col-lg-6 offset-lg-6">
@@ -141,10 +140,10 @@
                         <div class="col-12 pt-5 ">
                                 <h1 class="text-center text-white">GUÍA ESPIRITUAL</h1><br>
                         </div>
-                        <div class="col-8 rounded bg-dark p-4 mb-4">
+                        <div class="col-8 rounded bg-gray-dark p-4 mb-4">
                                 <p class="text-white">Son tratamientos intensivos involucran a los participantes en una profunda exploración personal de su propia naturaleza espiritual, y logra crear una conciencia firme de cada situación, a tal punto que llegamos a encontrar la raíz del problema, eliminamos toda la afectación y sufrimiento del ámbito personal. Nuestro objetivo es establecer un equilibrio en su vida, fortalecer el poder creativo que lleva dentro de usted, fundamentar el balance natural del cuerpo y el espíritu, esto se verá reflejado en su entorno, usted mismo verá los cambios de inmediato, todo a su alrededor cambiara y se acomodara a su favor</p>
                         </div>
-                        <div class="col-lg-5 offset-lg-7 rounded bg-dark p-4 mb-5">
+                        <div class="col-lg-5 offset-lg-7 rounded bg-gray-dark p-4 mb-5">
                                 <p class="text-white">Los tratamientos se organizan y se programan para cada persona en particular, dependiendo de factores como la edad, el peso, la enfermedad que padezca y el tiempo de incubación de dicho mal o dolencia espiritual, corporal o para el objetivo que desea alcanzar, nuestros productos son 100% de origen natural y sus compuestos son extractos de tallos, flores, raíces y frutos traídos directamente de lugares consagrados</p>
                         </div>
                 </div>
@@ -152,7 +151,7 @@
 
 </section>
 <!--Frase motivacional  -->
-<section class="signos container-fluid">
+<section class="bg-gray-dark container-fluid">
         <div class="container">
                 <div class="row">
                         <div class="col-12 pt-5 pb-5">
@@ -162,40 +161,35 @@
         </div>
 </section>
 <!--Contacto-->
-<section class="bg-gray container-fluid" id="contacto">
+<section class="bg-gray-light container-fluid pb-5" id="contacto">
         <div class="container">
                 <div class="row">
-                        <div class="col-12">
-                                <h1 class="text-warning text-center">Escribenos o  Llamanos</h1>
+                        <div class="col-12 pt-5">
+                                <h2 class="text-warning text-center">Escribenos o Llámanos</h2>
                         </div>
-                        <div class="col-12 text-center">
-                                <h4 class="text-white">QUEREMOS RESOLVER SUS PROBLEMAS</h4>
+                        <div class="col-12 pb-3">
+                                <h4 class="text-center">QUEREMOS RESOLVER SUS PROBLEMAS</h4>
                         </div>
                         <!--Formulario Contacto -->
-                        <div class="">
+                        <div class="col-6">
                                 <form>
                                         <div class="form-group">
-                                                <label for="inputName">Nombre</label>
-                                                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                                                <input type="text" class="form-control text-white" id="inputName" placeholder="Nombre">
                                         </div>
                                         <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                        <label for="inputPhone">Teléfono</label>
-                                                        <input type="Phone" class="form-control" id="inputPhone" placeholder="Teléfono">
+                                                        <input type="Phone" class="form-control text-white" id="inputPhone" placeholder="Teléfono">
                                                 </div>
 
                                                 <div class="form-group col-md-6">
-                                                        <label for="inputCity">Ciudad</label>
-                                                        <input type="City" class="form-control" id="inputCity" placeholder="Ciudad">
+                                                        <input type="City" class="form-control text-white" id="inputCity" placeholder="Ciudad">
                                                 </div>
                                         </div>
                                         <div class="form-group">
-                                                <label for="exampleInputEmail1">Correo</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+                                                <input type="email" class="form-control text-white" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleTextarea">Mensaje</label>
-                                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                            <textarea class="form-control text-white" id="exampleTextarea" rows="3" placeholder="Mensaje"></textarea>
                                         </div>
                                         <div class="d-flex justify-content-center">
                                                 <button type="submit" class="btn btn-success rounded">ENVIAR</button>
@@ -203,7 +197,28 @@
                                 </form>
                         </div>
                         <!-- Chat Skype? -->
-                        <div class="">
+                        <div class="col-6">
+                                <div class="bg-gray-dark rounded pt-3 pl-3 pb-3">
+                                        <div class="chat-box">
+                                                <p class="pt-2 pl-3 pb-2 font-weight-bold">Hola<br>¿Cómo estás?</p>
+                                        </div>
+                                        <div class="chat-box">
+                                                <p class="pt-2 pl-3 pb-2 font-weight-bold">llámanos estamos para ayudarte en lo que necesites.</p>
+                                        </div>
+                                        <div class="chat-box">
+                                                <p class="pt-2 pl-3 pb-2 font-weight-bold">Si no atendemos a su llamada, insista varias veces.</p>
+                                        </div>
+                                </div>
+                                <div class="row justify-content-center pt-2">
+                                        <div class="col-5">
+                                                <div class="skype-chat">
+                                                        <span class="skype-button rounded" data-contact-id="Alejandro Serna" data-color="#00A941">
+                                                                <button type="button" class="btn btn-success btn-block rounded"><img src="<?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
+                                                        </span>
+                                                        <span class="skype-chat" data-color-message="#00A941"></span>
+                                                </div>
+                                        </div>
+                                </div>
 
                         </div>
 

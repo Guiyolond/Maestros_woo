@@ -33,11 +33,17 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.signos{
+.bg-signos{
   background-color: #0A0102;
+}
+.bg-gray-dark{
+  background-color: #262925;
 }
 .bg-gray{
   background-color: #A1B59D;
+}
+.bg-gray-light{
+  background-color: #DAD7CA;
 }
 .navbar-light .navbar-toggler{border-color:none;}
 .navbar-light .navbar-toggler-icon{
@@ -50,13 +56,18 @@
   margin-top: 25rem;
 }
 .form-control {
-    color: rgba(255, 255, 255, 1);
-    background-color: #1b1e21 !important;
+    color: white !important;
+    background-color: #262925 !important;
     border-radius: .75rem !important;
 }
 h1{
   font-family: 'Oswald', sans-serif !important;
   font-size: 100px;
+  font-weight: 700;
+}
+h2{
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 70px;
   font-weight: 700;
 }
 h4{
@@ -65,8 +76,22 @@ h4{
 h5{
 text-align: center !important;
 }
-
 a {
   color: white !important;
   text-decoration: none !important;
   }
+.chat-box{
+  border-top-left-radius: 1.75rem;
+  border-top-right-radius: 1.75rem;
+  border-bottom-right-radius: 1.75em;
+  background-color: #EADEB1;
+}
+.chat-box:nth-child(1){
+  width: 50%;
+}
+.chat-box:nth-child(2){
+  width: 90%;
+}
+.chat-box:nth-child(3){
+  width: 50%;
+}
