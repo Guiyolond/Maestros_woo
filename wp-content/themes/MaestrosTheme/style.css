@@ -29,6 +29,11 @@
   background-repeat: no-repeat;
   height: 890px;
 }
+#espiritual{
+  background: url(./img/guiaespiritual_bg_xl.jpg) center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .signos{
   background-color: #0A0102;
 }
@@ -45,6 +50,12 @@
 .my_margin{
   margin-top: 25rem;
 }
+
+.form-control {
+
+    color: rgba(255, 255, 255, 1);
+    background-color: #1b1e21 !important;
+    border-radius: .75rem !important;
 
 h1{
   font-family: 'Oswald', sans-serif !important;

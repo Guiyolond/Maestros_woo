@@ -127,4 +127,81 @@
                 </div>
         </div>
 </section>
+<section id="espiritual" class="container-fluid">
+        <div class="container">
+                <div class="row">
+                        <div class="col-12 pt-5 ">
+                                <h1 class="text-center text-white">GUÍA ESPIRITUAL</h1><br>
+                        </div>
+                        <div class="col-8 rounded bg-dark p-4 mb-4">
+                                <p class="text-white">Son tratamientos intensivos involucran a los participantes en una profunda exploración personal de su propia naturaleza espiritual, y logra crear una conciencia firme de cada situación, a tal punto que llegamos a encontrar la raíz del problema, eliminamos toda la afectación y sufrimiento del ámbito personal. Nuestro objetivo es establecer un equilibrio en su vida, fortalecer el poder creativo que lleva dentro de usted, fundamentar el balance natural del cuerpo y el espíritu, esto se verá reflejado en su entorno, usted mismo verá los cambios de inmediato, todo a su alrededor cambiara y se acomodara a su favor</p>
+                        </div>
+                        <div class="col-lg-5 offset-lg-7 rounded bg-dark p-4 mb-5">
+                                <p class="text-white">Los tratamientos se organizan y se programan para cada persona en particular, dependiendo de factores como la edad, el peso, la enfermedad que padezca y el tiempo de incubación de dicho mal o dolencia espiritual, corporal o para el objetivo que desea alcanzar, nuestros productos son 100% de origen natural y sus compuestos son extractos de tallos, flores, raíces y frutos traídos directamente de lugares consagrados</p>
+                        </div>
+                </div>
+        </div>
+
+</section>
+<!--Frase motivacional  -->
+<section class="signos container-fluid">
+        <div class="container">
+                <div class="row">
+                        <div class="col-12 pt-5 pb-5">
+                                <h4 class="text-white text-center">Con una llamada tu vida cambiara completamente, los maestros consagrados<br> hemos ayudado a miles de personas en todo el mundo.</h4><br> <p class="text-warning text-center">POR AMOR A SU SANACIÓN LLÁMANOS Y LE DAREMOS SOLUCIÓN A SU PROBLEMA </p>
+                        </div>
+                </div>
+        </div>
+</section>
+<!--Contacto-->
+<section class="bg-gray container-fluid">
+        <div class="container">
+                <div class="row">
+                        <div class="col-12">
+                                <h1 class="text-warning text-center">Escribenos o  Llamanos</h1>
+                        </div>
+                        <div class="col-12 text-center">
+                                <h4 class="text-white">QUEREMOS RESOLVER SUS PROBLEMAS</h4>
+                        </div>
+                        <!--Formulario Contacto -->
+                        <div class="">
+                                <form>
+                                        <div class="form-group">
+                                                <label for="inputName">Nombre</label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                                        </div>
+                                        <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                        <label for="inputPhone">Teléfono</label>
+                                                        <input type="Phone" class="form-control" id="inputPhone" placeholder="Teléfono">
+                                                </div>
+
+                                                <div class="form-group col-md-6">
+                                                        <label for="inputCity">Ciudad</label>
+                                                        <input type="City" class="form-control" id="inputCity" placeholder="Ciudad">
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="exampleInputEmail1">Correo</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleTextarea">Mensaje</label>
+                                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                                <button type="submit" class="btn btn-success rounded">ENVIAR</button>
+                                        </div>
+                                </form>
+                        </div>
+                        <!-- Chat Skype? -->
+                        <div class="">
+
+                        </div>
+
+                </div>
+
+        </div>
+
+</section>
 <?php get_footer(); ?>
