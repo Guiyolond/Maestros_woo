@@ -122,13 +122,53 @@
                         <div class="col-lg-6 offset-lg-6">
                                 <h1 class="text-white pt-5 pb-5">SERVICIOS</h1>
                         </div>
-                        <div class="col-12 pb-2">
-                                <img class="mx-auto d-block" width="45px" height="45px" src="<?php bloginfo('template_url'); ?>/img/mas-01.png">
+
+
+
+                        <div class="card-deck">
+                                <div class="card bg-gray-light">
+                                        <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/serviciouno.jpg" alt="Ritual amor">
+                                        <div class="card-body">
+                                                <h5 class="card-title">RITUALES PARA EL AMOR</h5>
+
+                                        </div>
+
+                                </div>
+                                <div class="card bg-gray-light">
+                                        <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/serviciosdos.jpg" alt="Hechizos prosperidad">
+                                        <div class="card-body">
+                                                <h5 class="card-title">HECHIZOS PARA LA PROSPERIDAD</h5>
+
+                                        </div>
+
+                                </div>
+                                <div class="card bg-gray-light">
+                                        <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/serviciostres.jpg" alt="Bendiciones salud">
+                                        <div class="card-body">
+                                                <h5 class="card-title">BENDICIONES PARA LA SALUD</h5>
+
+                                        </div>
+
+                                </div>
+                                <div class="card bg-gray-light">
+                                        <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/servicioscuatro.jpg" alt="Magia negra">
+                                        <div class="card-body">
+                                                <h5 class="card-title">HECHIZOS DE MAGIA NEGRA</h5>
+
+                                        </div>
+
+                                </div>
+                        </div>
+
+
+
+                        <div class="col-12 pt-5 pb-2">
+                                <img class="mx-auto d-block" width="60px" height="60px" src="<?php bloginfo('template_url'); ?>/img/mas-01.png">
                         </div>
                         <div class="col-12">
                                 <p class="text-warning text-center">MIRA NUESTROS SERVICIOS Y PRODUCTOS</p>
                         </div>
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center pb-4">
                                 <p class="text-white">Cada uno de nuestros servicios<br> tiene un valor de 10$</p>
                         </div>
                 </div>

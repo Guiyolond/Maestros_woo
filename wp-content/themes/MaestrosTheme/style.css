@@ -70,6 +70,25 @@
     background-color: #262925 !important;
     border-radius: .75rem !important;
 }
+.chat-box{
+  border-top-left-radius: 1.75rem;
+  border-top-right-radius: 1.75rem;
+  border-bottom-right-radius: 1.75em;
+  background-color: #EADEB1;
+}
+.chat-box:nth-child(1){
+  width: 50%;
+}
+.chat-box:nth-child(2){
+  width: 90%;
+}
+.chat-box:nth-child(3){
+  width: 50%;
+}
+.card{
+  border-radius: .75rem;
+  border: 0;
+}
 h1{
   font-family: 'Oswald', sans-serif !important;
   font-size: 100px;
@@ -90,18 +109,3 @@ a {
   color: white !important;
   text-decoration: none !important;
   }
-.chat-box{
-  border-top-left-radius: 1.75rem;
-  border-top-right-radius: 1.75rem;
-  border-bottom-right-radius: 1.75em;
-  background-color: #EADEB1;
-}
-.chat-box:nth-child(1){
-  width: 50%;
-}
-.chat-box:nth-child(2){
-  width: 90%;
-}
-.chat-box:nth-child(3){
-  width: 50%;
-}
