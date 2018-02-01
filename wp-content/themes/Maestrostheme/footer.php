@@ -5,7 +5,8 @@
           <div class="col-12 pt-5 pb-3">
 
             <div style="text-align:center;">
-              <img src="http://www.reliablecounter.com/count.php?page=102791538&digit=style/plain/33/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.reliablecounter.com/cameras/comparison/canon-eos-50d-vs-canon-eos-60d" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">
+              <img src="http://www.reliablecounter.com/count.php?page=102791538&digit=style/plain/33/&reloads=0" alt="" title="" border="0">
+              <br />
             </div>
             <br>
 
