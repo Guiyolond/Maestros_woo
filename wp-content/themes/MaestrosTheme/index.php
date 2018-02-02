@@ -8,11 +8,11 @@
                 <p class="text-warning text-center">BIENVENIDO<br> A LO QUE NO PUEDES COMPRENDER</p>
         </div>
         <div class="d-flex justify-content-center pt-4 pb-5">
-                <img src="<?php bloginfo('template_url'); ?>/img/arrow.png">
+              <a href="#llamar"><img src="<?php bloginfo('template_url'); ?>/img/arrow.png"></a>
         </div>
 </section>
 
-<section class="bg-gray">
+<section class="bg-gray" id="llamar">
         <div class="container">
                 <div class="row pt-3 pb-3">
                         <div class="col-sm-12 col-md-6 text-center pt-3">

@@ -11,6 +11,7 @@
 */
 #home{
   background:url(./img/home_bg_xl.jpg) center;
+  height: 550px;
 }
 #horoscopo{
   background: url(./img/horoscopo_bg_xl.jpg) center;
@@ -26,7 +27,7 @@
   background:  url(./img/nosotrosdos_bg_xl.jpg) center;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 890px;
+  height: 750px;
 }
 #espiritual{
   background: url(./img/guiaespiritual_bg_xl.jpg) center;
