@@ -123,28 +123,30 @@
                                 <h1 class="text-white pt-5 pb-5">SERVICIOS</h1>
                         </div>
 
+                        <div class="products card-deck">
+                                <div class="card bg-gray-light">
+                                        <?php
+                                        $args = array(
+                                                'post_type' => 'product',
+                                                'posts_per_page' => 4
+                                        );
+                                        $loop = new WP_Query( $args );
+                                        if ( $loop->have_posts() ) {
+                                                while ( $loop->have_posts() ) : $loop->the_post();
+                                                wc_get_template_part( 'content', 'product' );
+                                        endwhile;
+                                        } else {
+                                                echo __( 'No products found' );
+                                        }
+                                        wp_reset_postdata();
+                                        ?>
+                                </div>
+                        </div><!--/.products-->
+                </div>
 
-                        <ul class="products">
-                                <?php
-                                $args = array(
-                                        'post_type' => 'product',
-                                        'posts_per_page' => 4
-                                );
-                                $loop = new WP_Query( $args );
-                                if ( $loop->have_posts() ) {
-                                        while ( $loop->have_posts() ) : $loop->the_post();
-                                        wc_get_template_part( 'content', 'product' );
-                                endwhile;
-                        } else {
-                                echo __( 'No products found' );
-                        }
-                        wp_reset_postdata();
-                        ?>
-                </ul><!--/.products-->
 
 
-
-                        <div class="card-deck">
+                        <!-- <div class="card-deck">
                                 <div class="card bg-gray-light">
                                         <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/serviciouno.jpg" alt="Ritual amor">
                                         <div class="card-body">
@@ -177,18 +179,13 @@
                                         </div>
 
                                 </div>
-                        </div>
-
-
+                        </div> -->
 
                         <div class="col-12 pt-5 pb-2">
                                 <a href=""><img class="mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mas-01.png"></a>
                         </div>
                         <div class="col-12">
                                 <p class="text-warning text-center">MIRA NUESTROS SERVICIOS Y PRODUCTOS</p>
-                        </div>
-                        <div class="col-12 text-center pb-4">
-                                <p class="text-white">Cada uno de nuestros servicios<br> tiene un valor de 10$</p>
                         </div>
                 </div>
         </div>
