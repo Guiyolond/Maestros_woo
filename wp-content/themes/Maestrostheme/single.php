@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('back'); ?>
     <article id="" class="container-fluid pl-0 pr-0">
       <div class="row">
       	<div class="col-12">
