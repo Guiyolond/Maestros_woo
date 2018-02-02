@@ -122,9 +122,8 @@
                         <div class="col-lg-6 offset-lg-6">
                                 <h1 class="text-white pt-5 pb-5">SERVICIOS</h1>
                         </div>
-
-                        <div class="products card-deck">
-                                <div class="card bg-gray-light">
+                        <div class="col-12">
+                                <div class="row products card-deck">
                                         <?php
                                         $args = array(
                                                 'post_type' => 'product',
@@ -140,8 +139,9 @@
                                         }
                                         wp_reset_postdata();
                                         ?>
-                                </div>
-                        </div><!--/.products-->
+                                </div><!--/.products-->
+                        </div>
+
                 </div>
 
 
