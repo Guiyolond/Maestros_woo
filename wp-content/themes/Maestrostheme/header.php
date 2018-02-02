@@ -34,7 +34,7 @@
                 <a data-scroll class="nav-link text-white" href="#espiritual">Guía espiritual</a>
               </li>
               <li class="nav-item d-flex justify-content-center">
-                <a data-scroll class="nav-link text-white" href="#contacto">contacto</a>
+                <a data-scroll class="nav-link text-white" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>

@@ -188,8 +188,8 @@
                         <div class="col-12">
                                 <p class="text-warning text-center">MIRA NUESTROS SERVICIOS Y PRODUCTOS</p>
                         </div>
-                        <div class="col-12">
-                                <p class="text-white text-center">PREGUNTE POR LA SOLUCION DEL PROBLEMA QUE NECESITE</p>
+                        <div class="col-12 pb-3">
+                                <p class="text-white text-center">PREGUNTE POR LA SOLUCIÓN DEL PROBLEMA QUE NECESITE</p>
                         </div>
                 </div>
         </div>
