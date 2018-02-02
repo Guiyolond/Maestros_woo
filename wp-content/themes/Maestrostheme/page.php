@@ -14,8 +14,6 @@
       				get_template_part( 'template-parts/content', 'none' );
       			}
       		?> -->
-
-            <?php woocommerce_content(); ?>
       	</div>
       </div>
       <div class="row p-5">

@@ -1,9 +1,9 @@
 <?php
   add_theme_support( 'post-thumbnails' );
-  function my_theme_setup() {
+  function woo_setup() {
     add_theme_support( 'woocommerce' );
   }
-  add_action( 'after_setup_theme', 'my_theme_setup' );
+  add_action( 'after_setup_theme', 'woo_setup' );
 
   // remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
   // remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
