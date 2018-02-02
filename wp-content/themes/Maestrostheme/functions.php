@@ -19,4 +19,14 @@
       echo '<!-- Ending content wrapper for your theme -->';
   }
   add_action( 'woocommerce_after_main_content', 'my_after_main_content' );
+  // Eliminar los CSS de WooCommerce uno por uno
+  add_filter( 'woocommerce_enqueue_styles', 'woocommerce_dequeue_styles' );
+  function woocommerce_dequeue_styles( $enqueue_styles ) {
+  	unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
+  	unset( $enqueue_styles['woocommerce-layout'] ); // Remove the layout
+  	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
+  	return $enqueue_styles;
+  }   
+  // Eliminar todos los CSS de WooCommerce de golpe
+  add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 ?>
