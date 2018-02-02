@@ -146,6 +146,7 @@
 
 
 
+
                         <!-- <div class="card-deck">
                                 <div class="card bg-gray-light">
                                         <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/serviciouno.jpg" alt="Ritual amor">
@@ -186,6 +187,9 @@
                         </div>
                         <div class="col-12">
                                 <p class="text-warning text-center">MIRA NUESTROS SERVICIOS Y PRODUCTOS</p>
+                        </div>
+                        <div class="col-12">
+                                <p class="text-white text-center">PREGUNTE POR LA SOLUCION DEL PROBLEMA QUE NECESITE</p>
                         </div>
                 </div>
         </div>
