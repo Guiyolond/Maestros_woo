@@ -17,7 +17,7 @@
       <div class="container fixed-top pt-5">
         <nav class="navbar navbar-light">
           <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-            <img src="<?php bloginfo('template_url'); ?>/img/back-arrow.png">
+            <img src="<?php bloginfo('template_url'); ?>/img/back_arrow.png">
           </a>
         </nav>
 
