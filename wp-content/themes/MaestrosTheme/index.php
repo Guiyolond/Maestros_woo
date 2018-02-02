@@ -124,6 +124,25 @@
                         </div>
 
 
+                        <ul class="products">
+                                <?php
+                                $args = array(
+                                        'post_type' => 'product',
+                                        'posts_per_page' => 4
+                                );
+                                $loop = new WP_Query( $args );
+                                if ( $loop->have_posts() ) {
+                                        while ( $loop->have_posts() ) : $loop->the_post();
+                                        wc_get_template_part( 'content', 'product' );
+                                endwhile;
+                        } else {
+                                echo __( 'No products found' );
+                        }
+                        wp_reset_postdata();
+                        ?>
+                </ul><!--/.products-->
+
+
 
                         <div class="card-deck">
                                 <div class="card bg-gray-light">
@@ -163,7 +182,7 @@
 
 
                         <div class="col-12 pt-5 pb-2">
-                                <img class="mx-auto d-block" width="60px" height="60px" src="<?php bloginfo('template_url'); ?>/img/mas-01.png">
+                                <a href=""><img class="mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mas-01.png"></a>
                         </div>
                         <div class="col-12">
                                 <p class="text-warning text-center">MIRA NUESTROS SERVICIOS Y PRODUCTOS</p>
