@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-    <article id="" class="container">
-      <div class="row pt-5 pl-5 pr-5">
-      	<div class="col-sm-12">
+    <article id="" class="container-fluid pl-0 pr-0">
+      <div class="row">
+      	<div class="col-12">
       		<?php
       			if( have_posts() ) {
       				while( have_posts() ) {
@@ -16,10 +16,13 @@
       		?>
       	</div>
       </div>
-      <div class="row p-5">
-        <div class="col-12">
-          <?php comments_template(); ?>
-        </div>
-      </div>
     </article>
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <?php comments_template(); ?>
+          </div>
+        </div>
+    </div>
+
 <?php get_footer(); ?>

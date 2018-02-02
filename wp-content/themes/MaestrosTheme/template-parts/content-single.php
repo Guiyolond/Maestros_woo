@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center bg-signos pt-5 pb-5">
 	<div class="">
 		<?php
 		if (has_post_thumbnail()){
@@ -6,9 +6,9 @@
 		}
 		?>
 	</div>
-	<h1 class="pl-3 text-center"><?php the_title() ?></h1>
+	<h1 class="pl-3 text-center text-white"><?php the_title() ?></h1>
 </div>
 
-<div class="content">
+<div class="content container">
 	<?php the_content() ?>
 </div>
