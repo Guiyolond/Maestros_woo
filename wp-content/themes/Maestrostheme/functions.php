@@ -10,7 +10,7 @@
 
   function my_before_main_content() {
       echo '<!-- Starting content wrapper for your theme -->';
-      echo '<div class="card bg-gray-light"><div class="col-3">';
+      echo '<div class="card bg-gray-light"><div class="col-lg-3 col-md-6 col-sm-12">';
   }
   add_action( 'woocommerce_before_main_content', 'my_before_main_content' );
 
@@ -26,7 +26,7 @@
   	unset( $enqueue_styles['woocommerce-layout'] ); // Remove the layout
   	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
   	return $enqueue_styles;
-  }   
+  }
   // Eliminar todos los CSS de WooCommerce de golpe
   add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 ?>

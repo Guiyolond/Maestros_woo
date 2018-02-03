@@ -11,7 +11,6 @@
 */
 #home{
   background:url(./img/home_bg_xl.jpg) center;
-  height: 550px;
 }
 #horoscopo{
   background: url(./img/horoscopo_bg_xl.jpg) center;
@@ -55,7 +54,6 @@
 }
 .nav-item{
   background-color: rgba(0, 0, 0, 0.8);
-  width: 30%;
 }
 .nav-item:hover{
   background-color: rgba(0, 0, 0, 0.5);
@@ -92,12 +90,12 @@
 }
 h1{
   font-family: 'Oswald', sans-serif !important;
-  font-size: 100px;
+  font-size: 5em;
   font-weight: 700;
 }
 h2{
   font-family: 'Oswald', sans-serif !important;
-  font-size: 70px;
+  font-size: 3em;
   font-weight: 700;
 }
 h4{
@@ -105,6 +103,9 @@ h4{
 }
 h5{
 text-align: center !important;
+}
+.text-yellow{
+  color: #E0AD2D;
 }
 a {
   color: white !important;
@@ -144,4 +145,74 @@ a {
 .form-submit>input:hover{
   background-color: #218838;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query since this is the default in Bootstrap */
+/* xs */
+@media (min-width: 320px) {
+  #home{
+    background:url(./img/home_bg_s.jpg) center;
+    height: 590px;
+  }
+  .nav-item{
+    width: 80%;
+  }
+  #horoscopo{
+    background: url(./img/horoscopo_bg_s.jpg) center;
+    background-repeat: no-repeat;
+  }
+  #nosotros{
+    background:  url(./img/nosotros_bg_s.jpg) center top;
+    height: 250px;
+  }
+  #espiritual{
+    background: url(./img/guiaespiritual_bg_s.jpg) center;
+    height: 250px;
+  }
+  h1{
+    font-size: 3em;
+  }
+}
+/* sm */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .nav-item{
+    width: 50%;
+  }
+  #home{
+    background:url(./img/home_bg_s.jpg) center;
+    height: 595px;
+  }
+  #horoscopo{
+    background: url(./img/horoscopo_bg_s.jpg) center;
+    background-repeat: no-repeat;
+    height: 250px;
+  }
+  #nosotros{
+    background:  url(./img/nosotros_bg_s.jpg) center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 435px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-item{
+    width: 30%;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+
 }

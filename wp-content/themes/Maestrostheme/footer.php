@@ -2,16 +2,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <!--Fake Counter-->
-          <div class="col-12 pt-5 pb-3">
-
-            <div style="text-align:center;">
-              <img src="http://www.reliablecounter.com/count.php?page=102791538&digit=style/plain/33/&reloads=0" alt="" title="" border="0">
-              <br />
-            </div>
-            <br>
-
-            <div style="text-align:center;"><script type="text/javascript" src="http://services.webestools.com/cpt_visits/17299-10-9.js"></script></div>
-
+          <div class="col-12   pt-5 ">
+            <img class="mx-auto d-block pb-2" src="http://www.reliablecounter.com/count.php?page=maestrosconsagrados.com12982550&digit=style/plain/1/&reloads=1" alt="Contador" title="" border="0">
+            <p class="text-warning text-center">PERSONAS HAN SIDO ATENDIDAS POR LOS MAESTROS</p>
           </div>
           <div class="col-12">
               <h6 class="text-white text-center">Pague por el medio de su preferencia, envios o su casa de envios.</h6>
@@ -38,7 +31,7 @@
             </div>
           </div>
           <div class="col-12 pt-3 pb-2">
-            <p class="text-white text-center">Al hacer uso de nuestros servicios acepta nuestras <a href="#" target="_blank">políticas y condiciones</a></p>
+            <p class="text-white text-center">Al hacer uso de nuestros servicios acepta nuestras <a href="<?php echo get_page_link(104); ?>" target="_blank">políticas y condiciones</a></p> 
           </div>
         </div>
       </div>
