@@ -17,22 +17,22 @@
           <!--Medios de pago -->
           <div class="row p-4">
             <div class="col-sm-4 col-md-4 col-lg-2">
-              <img src="<?php bloginfo('template_url'); ?>/img/mediodepagouno.png">
+              <img class="img-fluid mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mediodepagouno.png">
             </div>
             <div class="col-sm-4 col-md-4 col-lg-2">
-              <img src="<?php bloginfo('template_url'); ?>/img/mediodepagodos.png">
+              <img class="img-fluid mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mediodepagodos.png">
             </div>
             <div class="col-sm-4 col-md-4 col-lg-2">
-              <img src="<?php bloginfo('template_url'); ?>/img/mediodepagotres.png">
+              <img class="img-fluid mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mediodepagotres.png">
             </div>
             <div class="col-sm-4 col-md-4 col-lg-2">
-              <img src="<?php bloginfo('template_url'); ?>/img/mediodepagocuatro.png">
+              <img class="img-fluid mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mediodepagocuatro.png">
             </div>
             <div class="col-sm-4 col-md-4 col-lg-2">
-              <img src="<?php bloginfo('template_url'); ?>/img/mediodepagocinco.png">
+              <img class="img-fluid mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mediodepagocinco.png">
             </div>
             <div class="col-sm-4 col-md-4 col-lg-2">
-              <img src="<?php bloginfo('template_url'); ?>/img/mediodepagoseis.png">
+              <img class="img-fluid mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mediodepagoseis.png">
             </div>
           </div>
           <div class="col-12 pt-3 pb-2">
