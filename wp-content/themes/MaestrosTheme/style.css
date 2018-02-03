@@ -9,30 +9,7 @@
  Tags:         responsive, flat, woocommerce, Barra lateral izquierda, Fondo personalizado, Colores personalizados, Cabecera personalizada, custom-menu, Imágenes destacadas.
  Text Domain:  Maestros consagrados
 */
-#home{
-  background:url(./img/home_bg_xl.jpg) center;
-}
-#horoscopo{
-  background: url(./img/horoscopo_bg_xl.jpg) center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-#nosotros{
-  background:  url(./img/nosotros_bg_xl.jpg) center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-#nosotros2{
-  background:  url(./img/nosotrosdos_bg_xl.jpg) center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 750px;
-}
-#espiritual{
-  background: url(./img/guiaespiritual_bg_xl.jpg) center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
+
 .bg-signos{
   background-color: #0A0102;
 }
@@ -224,11 +201,53 @@ a {
   .nav-item{
     width: 30%;
   }
+  #home{
+    background:url(./img/home_bg_xl.jpg) center;
+  }
+  #horoscopo{
+    background: url(./img/horoscopo_bg_xl.jpg) center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #nosotros{
+    background:  url(./img/nosotros_bg_xl.jpg) center;
+    background-repeat: no-repeat;
+    height: 720px;
+  }
+  #nosotros2{
+    background:  url(./img/nosotrosdos_bg_xl.jpg) center;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+  #espiritual{
+    background: url(./img/guiaespiritual_bg_xl.jpg) center;
+    background-repeat: no-repeat;
+  }
+  .my_margin{
+    margin-top: 15rem;
+  }
+  h1{
+    font-size: 5em;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-
-
+  #nosotros{
+    background:  url(./img/nosotros_bg_xl.jpg) center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 720px;
+  }
+  #nosotros2{
+    background:  url(./img/nosotrosdos_bg_xl.jpg) center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+  }
+  #espiritual{
+    background: url(./img/guiaespiritual_bg_xl.jpg) center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }

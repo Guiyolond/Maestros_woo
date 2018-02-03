@@ -103,7 +103,7 @@
                         <div class="col-xs-12 col-md-6 offset-md-6">
                                 <h1 class="text-white pt-5 pb-md-4 pb-lg-5 float-sm-right">NOSOTROS</h1><br>
                         </div>
-                        <div class="d-none d-sm-none d-md-block col-md-8 col-lg-5 rounded bg-gray-dark p-4">
+                        <div class="d-none d-sm-none d-md-block col-md-8 col-lg-7 col-xl-8 rounded bg-gray-dark p-4">
                                 <p class="text-white">Maestros Consagrados, Entregamos nuestras vidas al servicio del prójimo, somos descendientes de tribus antiguas, especializados en diferentes ciencias, de esta manera podemos ofrecer asesoría directa en campos como: la eclíptica, la astrología, la medicina natural, la Botánica, el espiritismo, La auto sanación, la parapsicología, la metafísica, las cartas sagradas y practicas avanzadas de magia y hechicería, pretendemos asesorar de una manera integral y completa a todas aquellas personas que se encuentran experimentando algún tipo de sufrimiento en su cuerpo físico o a nivel espiritual, con prácticas heredadas de nuestros antepasados, adoptamos el celibato como principio a nuestros ancestros, consagrándonos como maestros dadores de los resultados más efectivos y ofrecemos nuestra espiritualidad consagrada para darle solución a todo.</p>
                         </div>
                 </div>
