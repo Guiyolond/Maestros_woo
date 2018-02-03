@@ -101,9 +101,9 @@
         <div class="container">
                 <div class="row">
                         <div class="col-xs-12 col-md-6 offset-md-6">
-                                <h1 class="text-white pt-5 pb-5 float-sm-right">NOSOTROS</h1><br>
+                                <h1 class="text-white pt-5 pb-md-4 pb-lg-5 float-sm-right">NOSOTROS</h1><br>
                         </div>
-                        <div class="d-none d-sm-none d-md-block col-md-12 col-lg-5 rounded bg-gray-dark p-4">
+                        <div class="d-none d-sm-none d-md-block col-md-8 col-lg-5 rounded bg-gray-dark p-4">
                                 <p class="text-white">Maestros Consagrados, Entregamos nuestras vidas al servicio del prójimo, somos descendientes de tribus antiguas, especializados en diferentes ciencias, de esta manera podemos ofrecer asesoría directa en campos como: la eclíptica, la astrología, la medicina natural, la Botánica, el espiritismo, La auto sanación, la parapsicología, la metafísica, las cartas sagradas y practicas avanzadas de magia y hechicería, pretendemos asesorar de una manera integral y completa a todas aquellas personas que se encuentran experimentando algún tipo de sufrimiento en su cuerpo físico o a nivel espiritual, con prácticas heredadas de nuestros antepasados, adoptamos el celibato como principio a nuestros ancestros, consagrándonos como maestros dadores de los resultados más efectivos y ofrecemos nuestra espiritualidad consagrada para darle solución a todo.</p>
                         </div>
                 </div>
@@ -117,7 +117,7 @@
 <section id="nosotros2" class="container-fluid d-none d-md-block">
         <div class="container">
                 <div class="row">
-                        <div class="col-lg-6 offset-lg-6 rounded bg-gray-dark p-4 my_margin">
+                        <div class="col-md-8 offset-md-4 col-lg-6 offset-lg-6 rounded bg-gray-dark p-4 my_margin">
                                 <p class="text-white">Nuestras terapias avanzadas están enfocadas a tratar los aspectos más críticos que pueden llegar a afectar a una persona solitaria, así como también a una pareja, una familia o incluso una comunidad. Durante el tiempo que se lleve este proceso es necesario el total compromiso de la persona interesada y el cumplimiento de cada uno de los métodos implementados, ya que con un verdadero compromiso se podra obtner los resultados esperados podrás conseguir lo que desees y el objetivo que tanto anhelas de la mano de los verdaderos Maestros Consagrados.</p>
                         </div>
                 </div>
@@ -200,12 +200,12 @@
         <div class="container">
                 <div class="row">
                         <div class="col-12 pt-5 ">
-                                <h1 class="text-center text-white float-sm-right">GUÍA ESPIRITUAL</h1><br>
+                                <h1 class="text-center text-white float-sm-right float-md-left">GUÍA ESPIRITUAL</h1><br>
                         </div>
                         <div class="d-none d-md-block col-md-8 rounded bg-gray-dark p-4 mb-4">
                                 <p class="text-white">Son tratamientos intensivos involucran a los participantes en una profunda exploración personal de su propia naturaleza espiritual, y logra crear una conciencia firme de cada situación, a tal punto que llegamos a encontrar la raíz del problema, eliminamos toda la afectación y sufrimiento del ámbito personal. Nuestro objetivo es establecer un equilibrio en su vida, fortalecer el poder creativo que lleva dentro de usted, fundamentar el balance natural del cuerpo y el espíritu, esto se verá reflejado en su entorno, usted mismo verá los cambios de inmediato, todo a su alrededor cambiara y se acomodara a su favor</p>
                         </div>
-                        <div class="d-none d-md-block col-md-8 col-lg-5 offset-lg-7 rounded bg-gray-dark p-4 mb-5">
+                        <div class="d-none d-md-block col-md-8 offset-md-4 col-lg-5 offset-lg-7 rounded bg-gray-dark p-4 mb-5">
                                 <p class="text-white">Los tratamientos se organizan y se programan para cada persona en particular, dependiendo de factores como la edad, el peso, la enfermedad que padezca y el tiempo de incubación de dicho mal o dolencia espiritual, corporal o para el objetivo que desea alcanzar, nuestros productos son 100% de origen natural y sus compuestos son extractos de tallos, flores, raíces y frutos traídos directamente de lugares consagrados</p>
                         </div>
                 </div>

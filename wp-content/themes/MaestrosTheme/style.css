@@ -147,9 +147,6 @@ a {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-
-/* // Extra small devices (portrait phones, less than 576px) */
-/* // No media query since this is the default in Bootstrap */
 /* xs */
 @media (min-width: 320px) {
   #home{
@@ -200,7 +197,26 @@ a {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+  #home{
+    background:url(./img/home_bg_md.jpg) center;
+    height: 700px;
+  }
+  #horoscopo{
+    background: url(./img/horoscopo_bg_md.jpg) center;
+    height: 500px;
+  }
+  #nosotros{
+    background:  url(./img/nosotros_bg_md.jpg) center left;
+    height: 716px;
+  }
+  #nosotros2{
+    background:  url(./img/nosotrosdos_bg_md.jpg) center;
+    height: 870px;
+  }
+  #espiritual{
+    background: url(./img/guiaespiritual_bg_md.jpg) center;
+    height: 923px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
