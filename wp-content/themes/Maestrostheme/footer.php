@@ -3,12 +3,16 @@
         <div class="row justify-content-center">
           <!--Fake Counter-->
           <div class="col-12 pt-5">
-            <div id="sfcdnu1t6mzu12w1qz6kh2brarz8fg7ar8l"></div><script type="text/javascript" src="https://counter2.freecounter.ovh/private/counter.js?c=dnu1t6mzu12w1qz6kh2brarz8fg7ar8l&down=async" async></script><noscript>
-              <a href="https://www.contadorvisitasgratis.com" title="contadores de visitas">
-                <img class="d-block mx-auto" src="https://counter2.freecounter.ovh/private/contadorvisitasgratis.php?c=dnu1t6mzu12w1qz6kh2brarz8fg7ar8l" border="0" title="contadores de visitas" alt="contadores de visitas"></a></noscript>
-                <a href="https://www.contadorvisitasgratis.com" title="contadores de visitas">
+            <!-- <div id="sfcdnu1t6mzu12w1qz6kh2brarz8fg7ar8l"></div><script type="text/javascript" src="https://counter2.freecounter.ovh/private/counter.js?c=dnu1t6mzu12w1qz6kh2brarz8fg7ar8l&down=async" async></script>
+            <noscript>
+              <a title="contadores de visitas">
+                <img class="d-block mx-auto" src="https://counter2.freecounter.ovh/private/contadorvisitasgratis.php?c=dnu1t6mzu12w1qz6kh2brarz8fg7ar8l" border="0" title="contadores de visitas" alt="contadores de visitas">
+              </a>
+              </noscript> -->
+
+                <section title="contadores de visitas">
                   <img class="d-block mx-auto" src="https://counter2.freecounter.ovh/private/contadorvisitasgratis.php?c=dnu1t6mzu12w1qz6kh2brarz8fg7ar8l" border="0" title="contadores de visitas" alt="contadores de visitas">
-                </a>
+                </section>
             <p class="text-yellow text-center">PERSONAS HAN SIDO ATENDIDAS POR LOS MAESTROS</p>
           </div>
           <div class="col-12">
