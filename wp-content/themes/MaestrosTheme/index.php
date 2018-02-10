@@ -129,61 +129,26 @@
                         <div class="col-sm-12 col-md-6 offset-md-6">
                                 <h1 class="text-white pt-5 pb-5 float-sm-right">SERVICIOS</h1>
                         </div>
-
                                 <div class="row card-deck">
-                                  <ul>
-                                    <?php
-                                    $args = array(
-                                            'post_type' => 'product',
-                                            'posts_per_page' => 4
-                                    );
-                                    $loop = new WP_Query( $args );
-                                    if ( $loop->have_posts() ) {
-                                            while ( $loop->have_posts() ) : $loop->the_post();
-                                            wc_get_template_part( 'content', 'product' );
-                                    endwhile;
-                                    } else {
-                                            echo __( 'No products found' );
-                                    }
-                                    wp_reset_postdata();
-                                    ?>
-                                </ul>
+                                        <ul>
+                                                <?php
+                                                $args = array(
+                                                        'post_type' => 'product',
+                                                        'posts_per_page' => 4,
+                                                        'orderby' => 'rand'
+                                                );
+                                                $loop = new WP_Query( $args );
+                                                if ( $loop->have_posts() ) {
+                                                        while ( $loop->have_posts() ) : $loop->the_post();
+                                                        wc_get_template_part( 'content', 'product' );
+                                                endwhile;
+                                                } else {
+                                                        echo __( 'No products found' );
+                                                }
+                                                wp_reset_postdata();
+                                                ?>
+                                        </ul>
                                 </div><!--/.products-->
-
-                </div>
-
-                        <!-- <div class="card-deck">
-                                <div class="card bg-gray-light">
-                                        <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/serviciouno.jpg" alt="Ritual amor">
-                                        <div class="card-body">
-                                                <h5 class="card-title">RITUALES PARA EL AMOR</h5>
-
-                                        </div>
-                                </div>
-                                <div class="card bg-gray-light">
-                                        <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/serviciosdos.jpg" alt="Hechizos prosperidad">
-                                        <div class="card-body">
-                                                <h5 class="card-title">HECHIZOS PARA LA PROSPERIDAD</h5>
-
-                                        </div>
-                                </div>
-                                <div class="card bg-gray-light">
-                                        <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/serviciostres.jpg" alt="Bendiciones salud">
-                                        <div class="card-body">
-                                                <h5 class="card-title">BENDICIONES PARA LA SALUD</h5>
-
-                                        </div>
-
-                                </div>
-                                <div class="card bg-gray-light">
-                                        <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/img/servicioscuatro.jpg" alt="Magia negra">
-                                        <div class="card-body">
-                                                <h5 class="card-title">HECHIZOS DE MAGIA NEGRA</h5>
-
-                                        </div>
-
-                                </div>
-                        </div> -->
 
                         <div class="col-12 pt-5 pb-2">
                                 <a href=""><img class="mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mas-01.png"></a>
