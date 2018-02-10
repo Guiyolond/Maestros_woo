@@ -205,7 +205,7 @@
                         <div class="d-none d-md-block col-md-8 rounded bg-gray-dark p-4 mb-4">
                                 <p class="text-white">Son tratamientos intensivos involucran a los participantes en una profunda exploración personal de su propia naturaleza espiritual, y logra crear una conciencia firme de cada situación, a tal punto que llegamos a encontrar la raíz del problema, eliminamos toda la afectación y sufrimiento del ámbito personal. Nuestro objetivo es establecer un equilibrio en su vida, fortalecer el poder creativo que lleva dentro de usted, fundamentar el balance natural del cuerpo y el espíritu, esto se verá reflejado en su entorno, usted mismo verá los cambios de inmediato, todo a su alrededor cambiara y se acomodara a su favor</p>
                         </div>
-                        <div class="d-none d-md-block col-md-8 offset-md-4 col-lg-5 offset-lg-7 rounded bg-gray-dark p-4 mb-5">
+                        <div class="d-none d-md-block col-md-8 offset-md-4 col-lg-5 offset-lg-7 rounded bg-gray-dark p-3">
                                 <p class="text-white">Los tratamientos se organizan y se programan para cada persona en particular, dependiendo de factores como la edad, el peso, la enfermedad que padezca y el tiempo de incubación de dicho mal o dolencia espiritual, corporal o para el objetivo que desea alcanzar, nuestros productos son 100% de origen natural y sus compuestos son extractos de tallos, flores, raíces y frutos traídos directamente de lugares consagrados</p>
                         </div>
                 </div>
