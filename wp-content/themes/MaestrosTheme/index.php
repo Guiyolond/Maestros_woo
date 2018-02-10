@@ -129,25 +129,27 @@
                         <div class="col-sm-12 col-md-6 offset-md-6">
                                 <h1 class="text-white pt-5 pb-5 float-sm-right">SERVICIOS</h1>
                         </div>
-                        <div class="col-12">
-                                <div class="row products card-deck">
-                                        <?php
-                                        $args = array(
-                                                'post_type' => 'product',
-                                                'posts_per_page' => 4
-                                        );
-                                        $loop = new WP_Query( $args );
-                                        if ( $loop->have_posts() ) {
-                                                while ( $loop->have_posts() ) : $loop->the_post();
-                                                wc_get_template_part( 'content', 'product' );
-                                        endwhile;
-                                        } else {
-                                                echo __( 'No products found' );
-                                        }
-                                        wp_reset_postdata();
-                                        ?>
+
+                                <div class="row card-deck">
+                                  <ul>
+                                    <?php
+                                    $args = array(
+                                            'post_type' => 'product',
+                                            'posts_per_page' => 4
+                                    );
+                                    $loop = new WP_Query( $args );
+                                    if ( $loop->have_posts() ) {
+                                            while ( $loop->have_posts() ) : $loop->the_post();
+                                            wc_get_template_part( 'content', 'product' );
+                                    endwhile;
+                                    } else {
+                                            echo __( 'No products found' );
+                                    }
+                                    wp_reset_postdata();
+                                    ?>
+                                </ul>
                                 </div><!--/.products-->
-                        </div>
+
                 </div>
 
                         <!-- <div class="card-deck">
