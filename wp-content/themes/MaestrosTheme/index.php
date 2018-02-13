@@ -129,6 +129,12 @@
                         <div class="col-sm-12 col-md-6 offset-md-6">
                                 <h1 class="text-white pt-5 pb-5 float-sm-right">SERVICIOS</h1>
                         </div>
+                        <div class="col-12 pt-5 pb-2">
+                                <a href="<?php echo get_page_link(57); ?>">carrito de compra</a>
+                        </div>
+                        <div class="col-12 pt-5 pb-2">
+                                <a href="<?php echo get_page_link(59); ?>">Mi cuenta</a>
+                        </div>
                                 <div class="row card-deck">
                                         <ul>
                                                 <?php
@@ -151,7 +157,7 @@
                                 </div><!--/.products-->
 
                         <div class="col-12 pt-5 pb-2">
-                                <a href=""><img class="mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mas-01.png"></a>
+                                <a href="<?php echo get_page_link(56); ?>"><img class="mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mas-01.png"></a>
                         </div>
                         <div class="col-12">
                                 <p class="text-yellow text-center">MIRA NUESTROS SERVICIOS Y PRODUCTOS</p>
