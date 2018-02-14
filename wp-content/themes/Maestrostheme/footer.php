@@ -53,7 +53,8 @@
     <!-- skype -->
     <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
     <!-- smooth -->
-    <script src="<?php bloginfo(stylesheet_directory); ?>/js/smooth-scroll.min.js"></script>
+    <!-- <script src="<?php bloginfo(stylesheet_directory); ?>/js/smooth-scroll.min.js"></script> -->
+    <?php wp_footer(); ?>
     <script type="text/javascript">
       var scroll = new SmoothScroll('a[href*="#"]', {
       	ignore: '[data-scroll-ignore]',
