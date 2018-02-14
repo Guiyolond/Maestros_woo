@@ -55,16 +55,16 @@
 }
 h1{
   font-family: 'Oswald', sans-serif !important;
-  font-size: 5em;
-  font-weight: 700;
+  font-size: 5em !important;
+  font-weight: 700 !important;
 }
 h2{
   font-family: 'Oswald', sans-serif !important;
-  font-size: 3em;
-  font-weight: 700;
+  font-size: 3em !important;
+  font-weight: 700 !important;
 }
 h4{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif !important;
 }
 h5{
 text-align: center !important;
@@ -215,7 +215,7 @@ a {
     margin-top: 15rem;
   }
   h1{
-    font-size: 5em;
+    font-size: 5em !important;
   }
 }
 
