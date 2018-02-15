@@ -25,8 +25,8 @@
     return __( 'Añadir al carrito', 'woocommerce' );
   }
   // remover breadcumbs
-  add_action( 'init', 'jk_remove_wc_breadcrumbs' );
-  function jk_remove_wc_breadcrumbs() {
+  add_action( 'init', 'MaestrosTheme_remove_wc_breadcrumbs' );
+  function MaestrosTheme_remove_wc_breadcrumbs() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
   }
 ?>
