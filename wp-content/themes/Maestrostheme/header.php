@@ -9,11 +9,10 @@
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/img/maestros-favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
-
   <body <?php body_class(); ?>>
       <div class="container fixed-top pt-5">
         <div class="row">
-          <div class="col-10">
+          <div class="col-lg-10 col-md-9 col-sm-8 col-4">
             <nav class="navbar navbar-light">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,10 +41,9 @@
               </div>
             </nav>
           </div>
-          <div class="col-2 float-right">
-            <a class="pl-3" alt="Mi cuenta" href="<?php echo get_page_link(59); ?>"><img src="<?php bloginfo('template_url'); ?>/img/User.png"></a>
-            <a class="pr-3" alt="Agregar al carrito" href="<?php echo get_page_link(57); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
+          <div class="align-items-end ">
+            <a class="pr-3" href="<?php echo get_page_link(57); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
+            <a class="pl-3" href="<?php echo get_page_link(59); ?>"><img src="<?php bloginfo('template_url'); ?>/img/User.png"></a>
           </div>
-
         </div>
       </div>

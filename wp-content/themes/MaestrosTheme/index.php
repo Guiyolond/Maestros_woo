@@ -129,7 +129,8 @@
                         <div class="col-sm-12 col-md-6 offset-md-6">
                                 <h1 class="text-white pt-5 pb-5 float-sm-right">SERVICIOS</h1>
                         </div>
-                                <div class="row card-deck">
+
+                        <div class="row card-deck">
                                         <ul>
                                                 <?php
                                                 $args = array(

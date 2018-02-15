@@ -15,7 +15,7 @@
           <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
             <img src="<?php bloginfo('template_url'); ?>/img/back_arrow.png">
           </a>
-          <div class="col-2 float-right ">
+          <div class="align-items-end pt-2">
             <a class="pl-3" alt="Mi cuenta" href="<?php echo get_page_link(59); ?>"><img src="<?php bloginfo('template_url'); ?>/img/User.png"></a>
             <a class="pr-3" alt="Agregar al carrito" href="<?php echo get_page_link(57); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
           </div>
