@@ -10,14 +10,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body <?php body_class(); ?>>
-      <div class="container pt-5 ">
-        <nav class="navbar navbar-light">
-          <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-            <img src="<?php bloginfo('template_url'); ?>/img/back_arrow.png">
-          </a>
-          <div class="align-items-end pt-2">
-            <a class="pl-3" alt="Mi cuenta" href="<?php echo get_page_link(59); ?>"><img src="<?php bloginfo('template_url'); ?>/img/User.png"></a>
-            <a class="pr-3" alt="Agregar al carrito" href="<?php echo get_page_link(57); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
+
+    <div class="container-fluid bg-signos">
+      <div class="container pt-4 ">
+        <div class="row">
+          <div class="col-lg-10 col-md-9 col-sm-8 col-4">
+            <nav class="navbar navbar-light">
+              <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+                <img src="<?php bloginfo('template_url'); ?>/img/back_arrow.png">
+              </a>
+            </nav>
           </div>
-        </nav>
+          <div class="align-items-end pt-2">
+            <a class="pr-2" alt="Mi cuenta" href="<?php echo get_page_link(59); ?>"><img src="<?php bloginfo('template_url'); ?>/img/User.png"></a>
+            <a class="pl-2" alt="Agregar al carrito" href="<?php echo get_page_link(57); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
+          </div>
+        </div>
       </div>
+    </div>

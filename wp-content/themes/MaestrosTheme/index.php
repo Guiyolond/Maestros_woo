@@ -130,7 +130,7 @@
                                 <h1 class="text-white pt-5 pb-5 float-sm-right">SERVICIOS</h1>
                         </div>
 
-                        <div class="row card-deck">
+                        <div class="row">
                                         <ul>
                                                 <?php
                                                 $args = array(

@@ -55,8 +55,8 @@
 }
 h1{
   font-family: 'Oswald', sans-serif !important;
-  font-size: 5em !important;
   font-weight: 700 !important;
+  font-size: 20px !important;
 }
 h2{
   font-family: 'Oswald', sans-serif !important;
@@ -142,7 +142,7 @@ img#wpstats{display:none;}
     height: 250px;
   }
   h1{
-    font-size: 3em;
+    font-size: 2em !important;
   }
 }
 /* sm */
@@ -165,6 +165,9 @@ img#wpstats{display:none;}
     background-size: 100%;
     background-repeat: no-repeat;
     height: 435px;
+  }
+  h1{
+    font-size: 3em !important;
   }
 }
 
@@ -189,6 +192,9 @@ img#wpstats{display:none;}
   #espiritual{
     background: url(../img/guiaespiritual_bg_md.jpg) center;
     height: 923px;
+  }
+  h1{
+    font-size: 4em !important;
   }
 }
 
