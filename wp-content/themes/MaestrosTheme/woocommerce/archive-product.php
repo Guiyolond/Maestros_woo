@@ -29,7 +29,7 @@ get_header( 'shop' );
 * @hooked woocommerce_breadcrumb - 20
 * @hooked WC_Structured_Data::generate_website_data() - 30
 */
-// do_action( 'woocommerce_before_main_content' );
+do_action( 'woocommerce_before_main_content' );
 ?>
 
 <article class="container pt-4 pb-4">
