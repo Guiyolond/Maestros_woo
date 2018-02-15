@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center bg-signos pt-5 pb-5">
+<div class="d-flex justify-content-center bg-signos pt-3 pb-5">
 	<div class="">
 		<?php
 		if (has_post_thumbnail()){
