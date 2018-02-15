@@ -35,3 +35,49 @@
   padding: 1em;
   float: right;
 }
+
+
+/* xs */
+@media (min-width: 320px) {
+
+  .card-deck ul{
+
+    display: inline-block;
+    font-size: .5em;
+
+
+  }
+  .card-deck ul li{
+    width: 80%;
+  }
+
+  .size-woocommerce_thumbnail{
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+/* sm */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card-deck ul li{
+    width: 10%;
+    margin: 1em;
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

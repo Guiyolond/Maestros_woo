@@ -11,16 +11,16 @@
   </head>
   <body>
 
-      <div class="container fixed-top pt-5">
+      <div class="container pt-5">
         <div class="row">
-          <div class="col-10">
+          <div class="col-lg-10 col-md-9 col-sm-8 col-7">
             <nav class="navbar navbar-light">
               <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
                 <img src="<?php bloginfo('template_url'); ?>/img/back_arrow.png">
               </a>
             </nav>
           </div>
-          <div class="col-2 float-right ">
+          <div class="align-items-end pt-2">
                 <a class="pr-3" href="<?php echo get_page_link(57); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
                 <a class="pl-3" href="<?php echo get_page_link(59); ?>"><img src="<?php bloginfo('template_url'); ?>/img/User.png"></a>
           </div>
