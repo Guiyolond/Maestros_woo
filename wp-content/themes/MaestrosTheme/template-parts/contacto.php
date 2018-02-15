@@ -4,8 +4,8 @@
   $email = $_POST['email'];
   $tel = $_POST['tel'];
   $mensaje = $_POST['mensaje'];
-  $from = 'From: www.jacmanriquecentral.org';
-  $to = 'info@jacmanriquecentral.org';
+  $from = 'From: www.maestrosconsagrados.com';
+  $to = 'maestrosconsagrados@outlook.com';
   $subject = 'Hola';
 
   $body = "From: $nombre\n $apellido\n E-Mail: $email\n Tel: $tel\n Mensaje:\n $mensaje";
