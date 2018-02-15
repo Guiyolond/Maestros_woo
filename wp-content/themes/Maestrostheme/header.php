@@ -9,7 +9,7 @@
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/img/maestros-favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
-  <body>
+  <body <?php body_class(); ?>>
 
       <div class="container fixed-top pt-5">
         <nav class="navbar navbar-light">

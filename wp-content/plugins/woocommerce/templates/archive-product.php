@@ -47,6 +47,7 @@ do_action( 'woocommerce_before_main_content' );
 	do_action( 'woocommerce_archive_description' );
 	?>
 </header>
+
 <?php
 
 if ( have_posts() ) {
@@ -59,6 +60,7 @@ if ( have_posts() ) {
 	 * @hooked woocommerce_catalog_ordering - 30
 	 */
 	do_action( 'woocommerce_before_shop_loop' );
+
 
 	woocommerce_product_loop_start();
 
