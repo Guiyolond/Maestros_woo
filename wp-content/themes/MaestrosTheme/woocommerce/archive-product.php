@@ -49,7 +49,8 @@ do_action( 'woocommerce_before_main_content' );
 		do_action( 'woocommerce_archive_description' );
 		?>
 	</header>
-
+<div class="row pb-3">
+	<div class="col-2">
 	<?php
 	if ( have_posts() ) {
 		/**
@@ -62,19 +63,12 @@ do_action( 'woocommerce_before_main_content' );
 		do_action( 'woocommerce_before_shop_loop' );
 		?>
 
-		<div class="row">
+		</div>
 			<div class="col-3">
 				<?php woocommerce_catalog_ordering(); ?>
 			</div>
-			<div class="col-3">
-				col-2
-			</div>
-			<div class="col-3">
-col-3
-			</div>
-			<div class="col-3">
 
-			</div>
+
 		</div>
 
 		<?php

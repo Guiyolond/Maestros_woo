@@ -51,6 +51,12 @@
   margin-top: 0 !important;
 }
 
+select.orderby{
+    margin: 10px;
+    background-color: black;
+    color: #E0AD2D;
+}
+
 
 /* xs */
 @media (min-width: 320px) {
