@@ -62,6 +62,21 @@ do_action( 'woocommerce_before_main_content' );
 		do_action( 'woocommerce_before_shop_loop' );
 		?>
 
+		<div class="row">
+			<div class="col-3">
+				<?php woocommerce_catalog_ordering(); ?>
+			</div>
+			<div class="col-3">
+				col-2
+			</div>
+			<div class="col-3">
+col-3
+			</div>
+			<div class="col-3">
+
+			</div>
+		</div>
+
 		<?php
 		woocommerce_product_loop_start();
 
@@ -95,6 +110,8 @@ do_action( 'woocommerce_before_main_content' );
 		* @hooked woocommerce_pagination - 10
 		*/
 		do_action( 'woocommerce_after_shop_loop' );
+		?>
+		<?php
 	} else {
 		/**
 		* Hook: woocommerce_no_products_found.
@@ -104,7 +121,6 @@ do_action( 'woocommerce_before_main_content' );
 		do_action( 'woocommerce_no_products_found' );
 	}
 	?>
-
 
 	<?php
 	/**

@@ -29,4 +29,82 @@
   function MaestrosTheme_remove_wc_breadcrumbs() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
   }
+  // remover contador de resultados
+  add_action( 'init', 'MaestrosTheme_woocommerce_result_count' );
+  function MaestrosTheme_woocommerce_result_count() {
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20, 0 );
+  }
+  // remover organizador de catalogo
+  add_action( 'init', 'MaestrosTheme_woocommerce_catalog_ordering' );
+  function MaestrosTheme_woocommerce_catalog_ordering() {
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30, 0 );
+  }
+  // cambio titulo tienda
+  add_filter( 'woocommerce_page_title', 'woo_shop_page_title');
+  function woo_shop_page_title( $page_title ) {
+    if( 'Shop' == $page_title) {
+      return "Nuestros servicios";
+     }
+  }
+
+  /**
+  * Output the product sorting options.
+  */
+  function woocommerce_catalog_ordering() {
+    if ( ! wc_get_loop_prop( 'is_paginated' ) || ! woocommerce_products_will_display() ) {
+      return;
+    }
+    $orderby                 = isset( $_GET['orderby'] ) ? wc_clean( wp_unslash( $_GET['orderby'] ) ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) ); // WPCS: sanitization ok, input var ok, CSRF ok.
+    $show_default_orderby    = 'menu_order' === apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+    $catalog_orderby_options = apply_filters( 'woocommerce_catalog_orderby', array(
+      'menu_order' => __( 'ordenar', 'woocommerce' ),
+      'popularity' => __( 'Ordenar por popularidad', 'woocommerce' ),
+      'rating'     => __( 'Ordenar por puntuación', 'woocommerce' ),
+      'date'       => __( 'Ordenar por fecha', 'woocommerce' ),
+      'price'      => __( 'Ordenar por precio: menor a mayor', 'woocommerce' ),
+      'price-desc' => __( 'Ordenar por precio: mayor a menor', 'woocommerce' ),
+    ) );
+
+    if ( wc_get_loop_prop( 'is_search' ) ) {
+      $catalog_orderby_options = array_merge( array( 'relevance' => __( 'Relevance', 'woocommerce' ) ), $catalog_orderby_options );
+      unset( $catalog_orderby_options['menu_order'] );
+      if ( 'menu_order' === $orderby ) {
+        $orderby = 'relevance';
+      }
+    }
+
+    if ( ! $show_default_orderby ) {
+      unset( $catalog_orderby_options['menu_order'] );
+    }
+
+    if ( 'no' === get_option( 'woocommerce_enable_review_rating' ) ) {
+      unset( $catalog_orderby_options['rating'] );
+    }
+
+    wc_get_template( 'loop/orderby.php', array(
+      'catalog_orderby_options' => $catalog_orderby_options,
+      'orderby'                 => $orderby,
+      'show_default_orderby'    => $show_default_orderby,
+    ) );
+  }
+
+
+
+  add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
+function custom_woocommerce_get_catalog_ordering_args( $args ) {
+  $orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+	if ( 'random_list' == $orderby_value ) {
+		$args['orderby'] = 'rand';
+		$args['order'] = '';
+		$args['meta_key'] = '';
+	}
+	return $args;
+}
+add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
+add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
+function custom_woocommerce_catalog_orderby( $sortby ) {
+	$sortby['random_list'] = 'Random';
+	return $sortby;
+}
+
 ?>

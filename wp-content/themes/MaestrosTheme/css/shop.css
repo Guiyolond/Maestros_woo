@@ -41,6 +41,16 @@
   background-color: #d4a632;
 }
 
+.woocommerce a.button{
+    padding: 0 !important;
+    font-size: 1em !important;
+    background-color: transparent !important;
+}
+
+.woocommerce .button{
+  margin-top: 0 !important;
+}
+
 
 /* xs */
 @media (min-width: 320px) {
