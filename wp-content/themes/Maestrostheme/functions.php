@@ -19,6 +19,11 @@
   function woocommerce_support() {
     add_theme_support( 'woocommerce' );
   }
+  add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' );    // 2.1 +
+  function woo_archive_custom_cart_button_text() {
+    return __( 'Añadir al carrito', 'woocommerce' );
+
+  }
   // add_filter('loop_shop_columns', 'lood_columns');
   // if (!function_exists('loop_columns')) {
   //   function loop_columns(){

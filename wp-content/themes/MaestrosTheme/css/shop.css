@@ -25,13 +25,18 @@
 
 .woocommerce-Price-amount{
   font-size: 2em;
-  color:  #28a745;
-  padding: 1em;
+  padding-left: 1em;
   float: left;
 }
+
 .add_to_cart_button {
-  font-size: 2em;
-  color:  #28a745 !important;
-  padding: 1em;
-  float: right;
+  color:  white !important;
+}
+
+.btn-dorado{
+  background-color: #E0AD2D;
+}
+
+.btn-dorado:hover{
+  background-color: #d4a632;
 }

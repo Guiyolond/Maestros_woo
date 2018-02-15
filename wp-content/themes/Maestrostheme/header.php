@@ -42,9 +42,9 @@
               </div>
             </nav>
           </div>
-          <div class="col-2 float-right ">
-            <a class="pr-3" alt="Agregar al carrito" href="<?php echo get_page_link(57); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
+          <div class="col-2 float-right">
             <a class="pl-3" alt="Mi cuenta" href="<?php echo get_page_link(59); ?>"><img src="<?php bloginfo('template_url'); ?>/img/User.png"></a>
+            <a class="pr-3" alt="Agregar al carrito" href="<?php echo get_page_link(57); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
           </div>
 
         </div>
