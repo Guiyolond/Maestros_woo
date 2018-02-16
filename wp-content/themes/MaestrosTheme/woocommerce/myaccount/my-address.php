@@ -24,12 +24,12 @@ $customer_id = get_current_user_id();
 
 if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) {
 	$get_addresses = apply_filters( 'woocommerce_my_account_get_addresses', array(
-		'billing' => __( 'Billing address', 'woocommerce' ),
-		'shipping' => __( 'Shipping address', 'woocommerce' ),
+		'billing' => __( 'Dirección de Facturas', 'woocommerce' ),
+		'shipping' => __( 'Dirección de envios', 'woocommerce' ),
 	), $customer_id );
 } else {
 	$get_addresses = apply_filters( 'woocommerce_my_account_get_addresses', array(
-		'billing' => __( 'Billing address', 'woocommerce' ),
+		'billing' => __( 'Dirección de Facturas', 'woocommerce' ),
 	), $customer_id );
 }
 
@@ -38,7 +38,7 @@ $col    = 1;
 ?>
 
 <p>
-	<?php echo apply_filters( 'woocommerce_my_account_my_address_description', __( 'The following addresses will be used on the checkout page by default.', 'woocommerce' ) ); ?>
+	<?php echo apply_filters( 'woocommerce_my_account_my_address_description', __( 'Las siguientes direcciones se usarán en la página de pago de manera predeterminada.', 'woocommerce' ) ); ?>
 </p>
 
 <?php if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) : ?>
@@ -54,7 +54,7 @@ $col    = 1;
 		</header>
 		<address><?php
 			$address = wc_get_account_formatted_address( $name );
-			echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set up this type of address yet.', 'woocommerce' );
+			echo $address ? wp_kses_post( $address ) : esc_html_e( 'Aún no ha configurado este tipo de dirección.', 'woocommerce' );
 		?></address>
 	</div>
 

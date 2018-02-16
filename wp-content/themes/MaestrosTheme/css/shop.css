@@ -132,9 +132,21 @@ div.berocket_lgv_additional_data {
   background-color: #d4a632;
 }
 
+.col-1, .col-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}
+
 /* xs */
 @media (min-width: 320px) {
-
+  .col-1, .col-2 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+  }
 }
 /* sm */
 /* // Small devices (landscape phones, 576px and up) */

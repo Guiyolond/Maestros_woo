@@ -106,4 +106,5 @@
     return __('Añadir al carrito', 'woocommerce');
   }
 
+
 ?>
