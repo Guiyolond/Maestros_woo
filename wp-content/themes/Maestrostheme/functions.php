@@ -19,11 +19,6 @@
   function woocommerce_support() {
     add_theme_support( 'woocommerce' );
   }
-  // texto añadir al carrito
-  add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' );    // 2.1 +
-  function woo_archive_custom_cart_button_text() {
-    return __( 'Añadir al carrito', 'woocommerce' );
-  }
   // remover breadcumbs
   add_action( 'init', 'MaestrosTheme_remove_wc_breadcrumbs' );
   function MaestrosTheme_remove_wc_breadcrumbs() {
@@ -86,5 +81,29 @@
     ) );
   }
 
+  // remover input de website en caja de comentarios
+  function disable_comment_uri($fields)
+  {
+    if(isset($fields['url']))
+    unset($fields['url']);
+    return $fields;
+  }
+  add_filter('comment_form_default_fields', 'disable_comment_uri');
+
+  // titulos de tabs de productos
+  add_filter( 'woocommerce_product_tabs', 'oaf_wc_change_product_tabs_titles', 20);
+  function oaf_wc_change_product_tabs_titles($tabs) {
+    $tabs['description']['title'] = 'Descripción del servicio';
+    $tabs['reviews']['title'] = 'Valoraciones';
+    return $tabs;
+  }
+
+  // Cambiar textos "Add to cart" en category pages
+  add_filter( 'woocommerce_product_add_to_cart_text', 'MaestrosTheme_wc_change_add_to_cart_text' );
+  // cambiar textos "Add to cart" en single product pages
+  add_filter( 'woocommerce_product_single_add_to_cart_text', 'MaestrosTheme_wc_change_add_to_cart_text' );
+  function MaestrosTheme_wc_change_add_to_cart_text() {
+    return __('Añadir al carrito', 'woocommerce');
+  }
 
 ?>
