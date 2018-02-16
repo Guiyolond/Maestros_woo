@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The template for displaying product content within loops
@@ -38,7 +37,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_before_shop_loop_item' );
 	?>
-	<h5 class="card-title">
 	<?php
 	/**
 	 * woocommerce_before_shop_loop_item_title hook.

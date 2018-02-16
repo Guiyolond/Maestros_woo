@@ -50,7 +50,7 @@ do_action( 'woocommerce_before_main_content' );
 		?>
 	</header>
 <div class="row pb-3">
-	<div class="col-2">
+	<div class="col-sm-6 col-md-6 col-lg-2">
 	<?php
 	if ( have_posts() ) {
 		/**
@@ -64,7 +64,7 @@ do_action( 'woocommerce_before_main_content' );
 		?>
 
 		</div>
-			<div class="col-3">
+			<div class="col-sm-6 col-md-6 col-lg-3">
 				<?php woocommerce_catalog_ordering(); ?>
 			</div>
 

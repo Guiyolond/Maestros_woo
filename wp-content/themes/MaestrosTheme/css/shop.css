@@ -20,27 +20,32 @@
   color: #1C1A18;
   font-family: 'roboto' sans-serif;
   font-weight: 200;
-  font-size: 2,5em;
+  font-size: 2.5em;
   padding: .8em 0 0 0;
   text-align: center;
 }
 
 .woocommerce-Price-amount{
   font-size: 2em;
-  padding-left: 1em;
+  padding-left: 2em;
   float: left;
+  color: black;
+  font-weight: 700;
+  line-height: 3;
+  margin-right: .5em;
 }
 
 .add_to_cart_button {
   color:  white !important;
 }
 
-.btn-dorado{
-  background-color: #E0AD2D;
+.btn-dorado, .single_add_to_cart_button{
+  background-color: #E0AD2D !important;
+  margin: .2em;
 }
 
-.btn-dorado:hover{
-  background-color: #d4a632;
+.btn-dorado:hover, .single_add_to_cart_button:hover{
+  background-color: #d4a632 !important;
 }
 
 .woocommerce a.button{
@@ -59,16 +64,51 @@ select.orderby{
     color: #E0AD2D;
 }
 
+.woocommerce ul.products li.product a img {
+    margin: 0 0 0;
+}
+
+ul.products{
+  max-width: 1920px;
+  font-size: .5em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  align-items: stretch;
+}
+
+ul.products li.product{
+  width: 250px;
+  margin: 1em;
+  background-color: #DAD7CA;
+  border-radius: .75rem;
+  height: auto;
+  padding-bottom: 1em;
+}
+
+ul.products li.product h2{
+  color: #1C1A18;
+  font-family: 'roboto' sans-serif;
+  font-weight: 200;
+  font-size: 2.5em !important;
+  text-align: center;
+  padding: .8em .4em 0 .4em !important;
+}
+
+div.berocket_lgv_additional_data {
+    width: 100% !important;
+}
+
+.woocommerce ul.products .product.berocket_lgv_list:nth-child(n), .woocommerce-page ul.products .product.berocket_lgv_list:nth-child(n) {
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 24.2em;
+}
+
+
 /* xs */
 @media (min-width: 320px) {
-  .row ul li{
-    width: 200px;
-  }
 
-  .size-woocommerce_thumbnail{
-    width: 100%;
-    height: 100%;
-  }
 }
 /* sm */
 /* // Small devices (landscape phones, 576px and up) */
