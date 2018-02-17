@@ -24,13 +24,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php _e( 'Someone requested that the password be reset for the following account:', 'woocommerce' ); ?></p>
+<p><?php _e( 'Alguien solicitó que se restablezca la contraseña para la siguiente cuenta:', 'woocommerce' ); ?></p>
 <p><?php printf( __( 'Username: %s', 'woocommerce' ), $user_login ); ?></p>
-<p><?php _e( 'If this was a mistake, just ignore this email and nothing will happen.', 'woocommerce' ); ?></p>
-<p><?php _e( 'To reset your password, visit the following address:', 'woocommerce' ); ?></p>
+<p><?php _e( 'Si esto fue un error, simplemente ignore este correo electrónico y no pasará nada.', 'woocommerce' ); ?></p>
+<p><?php _e( 'Para restablecer su contraseña, visite la siguiente dirección:', 'woocommerce' ); ?></p>
 <p>
 	<a class="link" href="<?php echo esc_url( add_query_arg( array( 'key' => $reset_key, 'login' => rawurlencode( $user_login ) ), wc_get_endpoint_url( 'lost-password', '', wc_get_page_permalink( 'myaccount' ) ) ) ); ?>">
-			<?php _e( 'Click here to reset your password', 'woocommerce' ); ?></a>
+			<?php _e( 'Haga clic aquí para restablecer la contraseña', 'woocommerce' ); ?></a>
 </p>
 <p></p>
 

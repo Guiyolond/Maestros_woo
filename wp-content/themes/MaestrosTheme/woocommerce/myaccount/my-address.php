@@ -24,8 +24,8 @@ $customer_id = get_current_user_id();
 
 if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) {
 	$get_addresses = apply_filters( 'woocommerce_my_account_get_addresses', array(
-		'billing' => __( 'Dirección de Facturas', 'woocommerce' ),
-		'shipping' => __( 'Dirección de envios', 'woocommerce' ),
+		'billing' => __( 'Información de facturación', 'woocommerce' ),
+		'shipping' => __( 'Información de envios', 'woocommerce' ),
 	), $customer_id );
 } else {
 	$get_addresses = apply_filters( 'woocommerce_my_account_get_addresses', array(

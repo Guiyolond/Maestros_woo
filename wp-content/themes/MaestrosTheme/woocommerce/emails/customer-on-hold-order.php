@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php _e( "Your order is on-hold until we confirm payment has been received. Your order details are shown below for your reference:", 'woocommerce' ); ?></p>
+<p><?php _e( "Su pedido está en espera hasta que confirmemos que se ha recibido el pago. Los detalles de su orden se muestran a continuación para su referencia:", 'woocommerce' ); ?></p>
 
 <?php
 

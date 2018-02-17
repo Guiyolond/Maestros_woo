@@ -42,6 +42,7 @@
 .btn-dorado, .single_add_to_cart_button{
   background-color: #E0AD2D !important;
   margin: .2em;
+  color: white;
 }
 
 .btn-dorado:hover, .single_add_to_cart_button:hover{
@@ -137,6 +138,35 @@ div.berocket_lgv_additional_data {
     -ms-flex: 0 0 50%;
     flex: 0 0 50% !important;
     max-width: 50% !important;
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+    width: 100%;
+    color: white;
+    font-weight: 400;
+    background-color: #262925 !important;
+    border-radius: .75rem !important;
+    padding: 1em !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    background-color: #262925 !important;
+    color: white !important;
+    border-radius: .25rem !important;
+}
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+    display: block;
+    text-align: center;
+    padding: 1em !important;
+    background-color: #E0AD2D !important;
+    margin: auto;
+    color: white;
+    width: 50%;
+}
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button:hover {
+  background-color: #d4a632;
 }
 
 /* xs */

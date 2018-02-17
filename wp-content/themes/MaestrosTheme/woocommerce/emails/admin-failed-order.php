@@ -25,7 +25,7 @@
   */
  do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
- <p><?php printf( __( 'Payment for order #%1$s from %2$s has failed. The order was as follows:', 'woocommerce' ), $order->get_order_number(), $order->get_formatted_billing_full_name() ); ?></p>
+ <p><?php printf( __( 'El pago de la orden #%1$s de %2$s ha fallado. la orden fue el siguiente:', 'woocommerce' ), $order->get_order_number(), $order->get_formatted_billing_full_name() ); ?></p>
 
  <?php
 
