@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 echo "= " . $email_heading . " =\n\n";
 
-echo __( "Your order has been received and is now being processed. Your order details are shown below for your reference:", 'woocommerce' ) . "\n\n";
+echo __( "Su orden ha sido recibida y ahora está siendo procesada. Los detalles de su orden se muestran a continuación para su referencia:", 'woocommerce' ) . "\n\n";
 
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 

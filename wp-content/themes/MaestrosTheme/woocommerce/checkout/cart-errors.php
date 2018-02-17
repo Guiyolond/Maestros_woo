@@ -24,8 +24,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php wc_print_notices(); ?>
 
-<p><?php _e( 'There are some issues with the items in your cart (shown above). Please go back to the cart page and resolve these issues before checking out.', 'woocommerce' ) ?></p>
+<p><?php _e( 'Hay algunos problemas con los artículos en su carrito (mostrados arriba). Regrese a la página del carro y resuelva estos problemas antes de pagar.', 'woocommerce' ) ?></p>
 
 <?php do_action( 'woocommerce_cart_has_errors' ); ?>
 
-<p><a class="button wc-backward" href="<?php echo esc_url( wc_get_page_permalink( 'cart' ) ); ?>"><?php _e( 'Return to cart', 'woocommerce' ) ?></a></p>
+<p><a class="btn btn-dorado wc-backward" href="<?php echo esc_url( wc_get_page_permalink( 'cart' ) ); ?>"><?php _e( 'Regresar al carrito de compras', 'woocommerce' ) ?></a></p>

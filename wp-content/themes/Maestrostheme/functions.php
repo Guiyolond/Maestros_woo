@@ -105,6 +105,4 @@
   function MaestrosTheme_wc_change_add_to_cart_text() {
     return __('Añadir al carrito', 'woocommerce');
   }
-
-
 ?>
