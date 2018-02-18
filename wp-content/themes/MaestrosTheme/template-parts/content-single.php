@@ -8,7 +8,6 @@
 	</div>
 	<h1 class="pl-3 text-center text-white"><?php the_title() ?></h1>
 </div>
-
 <div class="content container">
 	<?php the_content() ?>
 </div>

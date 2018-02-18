@@ -8,7 +8,6 @@
       					the_post();
       					get_template_part( 'template-parts/content-single', '' );
       				}
-
       			}
       			else {
       				get_template_part( 'template-parts/content', 'none' );
@@ -24,5 +23,4 @@
           </div>
         </div>
     </div>
-
 <?php get_footer(); ?>

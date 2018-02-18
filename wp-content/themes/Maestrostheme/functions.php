@@ -41,7 +41,6 @@
       return "Nuestros servicios";
      }
   }
-
   // orden del catalogo
   function woocommerce_catalog_ordering() {
     if ( ! wc_get_loop_prop( 'is_paginated' ) || ! woocommerce_products_will_display() ) {
@@ -57,7 +56,6 @@
       'price'      => __( 'Ordenar por precio: menor a mayor', 'woocommerce' ),
       'price-desc' => __( 'Ordenar por precio: mayor a menor', 'woocommerce' ),
     ) );
-
     if ( wc_get_loop_prop( 'is_search' ) ) {
       $catalog_orderby_options = array_merge( array( 'relevance' => __( 'Relevance', 'woocommerce' ) ), $catalog_orderby_options );
       unset( $catalog_orderby_options['menu_order'] );
@@ -65,22 +63,18 @@
         $orderby = 'relevance';
       }
     }
-
     if ( ! $show_default_orderby ) {
       unset( $catalog_orderby_options['menu_order'] );
     }
-
     if ( 'no' === get_option( 'woocommerce_enable_review_rating' ) ) {
       unset( $catalog_orderby_options['rating'] );
     }
-
     wc_get_template( 'loop/orderby.php', array(
       'catalog_orderby_options' => $catalog_orderby_options,
       'orderby'                 => $orderby,
       'show_default_orderby'    => $show_default_orderby,
     ) );
   }
-
   // remover input de website en caja de comentarios
   function disable_comment_uri($fields)
   {
@@ -89,7 +83,6 @@
     return $fields;
   }
   add_filter('comment_form_default_fields', 'disable_comment_uri');
-
   // titulos de tabs de productos
   add_filter( 'woocommerce_product_tabs', 'oaf_wc_change_product_tabs_titles', 20);
   function oaf_wc_change_product_tabs_titles($tabs) {
@@ -97,7 +90,6 @@
     $tabs['reviews']['title'] = 'Valoraciones';
     return $tabs;
   }
-
   // Cambiar textos "Add to cart" en category pages
   add_filter( 'woocommerce_product_add_to_cart_text', 'MaestrosTheme_wc_change_add_to_cart_text' );
   // cambiar textos "Add to cart" en single product pages
