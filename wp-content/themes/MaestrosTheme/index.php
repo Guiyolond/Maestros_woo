@@ -123,7 +123,7 @@
               <?php
               $args = array(
                 'post_type' => 'product',
-                'posts_per_page' => 4,
+                'posts_per_page' => 6,
                 'orderby' => 'rand'
               );
               $loop = new WP_Query( $args );
