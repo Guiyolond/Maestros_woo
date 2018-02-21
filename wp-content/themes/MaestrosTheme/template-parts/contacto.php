@@ -42,7 +42,7 @@
             </div>
           </div>
         </header>
-          <article id="home">
+          <article>
             <div class="row mt-5 pl-5 pr-5 pt-5 d-flex justify-content-center">
               <div class="col-lg-12 col-md-6 col-xs-12 mt-5">
                   <h1 class="text-center">Tu mensaje ha sido enviado exitosamente.</h1>
@@ -131,7 +131,7 @@
             </div>
           </div>
         </header>
-          <article id="home">
+          <article>
             <div class="row mt-5 pl-5 pr-5 pt-5 d-flex justify-content-center">
               <div class="col-lg-12 col-md-6 col-xs-12 mt-5">
                   <h1 class="text-center">:( algo salió mal.</h1>

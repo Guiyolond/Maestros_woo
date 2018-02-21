@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce MercadoPago
  * Plugin URI: https://github.com/mercadopago/cart-woocommerce
  * Description: This is the <strong>oficial</strong> module of Mercado Pago for WooCommerce plugin. This module enables WooCommerce to use Mercado Pago as a payment Gateway for purchases made in your e-commerce store.
- * Version: 3.0.10
+ * Version: 3.0.11
  * Author: Mercado Pago
  * Author URI: https://www.mercadopago.com.br/developers/
  * Text Domain: woocommerce-mercadopago
@@ -79,6 +79,7 @@ if ( ! class_exists( 'WC_Woo_Mercado_Pago_Module' ) ) :
 	 * - validate_credentials_v0()
 	 * - validate_credentials_v1()
 	 * - woocommerce_instance()
+	 * - get_common_error_messages( $key )
 	 * - get_conversion_rate( $used_currency )
 	 * - get_common_settings()
 	 * - get_categories()
@@ -105,7 +106,7 @@ if ( ! class_exists( 'WC_Woo_Mercado_Pago_Module' ) ) :
 		// ============================================================
 
 		// General constants.
-		const VERSION = '3.0.10';
+		const VERSION = '3.0.11';
 		const MIN_PHP = 5.6;
 
 		// Arrays to hold configurations for LatAm environment.
@@ -450,6 +451,26 @@ if ( ! class_exists( 'WC_Woo_Mercado_Pago_Module' ) ) :
 				global $woocommerce;
 				return $woocommerce;
 			}
+		}
+
+		// Get common error messages
+		public static function get_common_error_messages( $key ) {
+			if ( $key === 'Invalid payment_method_id' ) {
+				return __( 'Invalid payment_method_id', 'woocommerce-mercadopago' );
+			}
+			if ( $key === 'Invalid transaction_amount' ) {
+				return __( 'Invalid transaction_amount', 'woocommerce-mercadopago' ) . ' ' .
+				__( 'Posible causes: Currency not supported; Values under the minimal or above the maximun allowed.', 'woocommerce-mercadopago' );
+			}
+			if ( $key === 'Invalid users involved' ) {
+				return __( 'Invalid users involved', 'woocommerce-mercadopago' ) . ' ' .
+				__( 'Posible causes: Seller and buyer have the same email in Mercado Pago; Transaction involves production and test users.', 'woocommerce-mercadopago' );
+			}
+			if ( $key === 'Unauthorized use of live credentials' ) {
+				return __( 'Unauthorized use of live credentials', 'woocommerce-mercadopago' ) . ' ' .
+				__( 'Posible causes: Pending permission of use in production of the seller credentials.', 'woocommerce-mercadopago' );
+			}
+			return $key;
 		}
 
 		/**

@@ -32,7 +32,7 @@
               </div>
             </div>
             <div class="col-12 pt-3 pb-2">
-              <p class="text-white text-center">Al hacer uso de nuestros servicios acepta nuestras <a href="<?php echo get_page_link(104); ?>" target="_blank">políticas y condiciones</a></p>
+              <p class="text-white text-center">Al hacer uso de nuestros servicios acepta nuestras <a href="<?php echo get_page_link(129); ?>" target="_blank">políticas y condiciones</a></p>
             </div>
           </div>
         </div>
