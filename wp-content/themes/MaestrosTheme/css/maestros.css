@@ -1,120 +1,32 @@
-body{
-  font-size: 16px;
-}
-.bg-signos{
-  background-color: #0A0102;
-}
-.bg-gray-dark{
-  background-color: #262925;
-}
-.bg-gray{
-  background-color: #A1B59D;
-}
-.bg-gray-light{
-  background-color: #DAD7CA;
-}
+body{font-size:16px;}
+.bg-signos{background-color:#0A0102;}
+.bg-gray-dark{background-color:#262925;}
+.bg-gray{background-color:#A1B59D;}
+.bg-gray-light{background-color:#DAD7CA;}
 .navbar-light .navbar-toggler{border-color:none;}
-.navbar-light .navbar-toggler-icon{
-  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(191,143,29)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-}
-.navbar-light .navbar-toggler {
-  border-color: rgb(191,143,29) !important;
-}
-.nav-item{
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.nav-item:hover{
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.rounded{
-  border-radius: .75rem !important;
-}
-.my_margin{
-  margin-top: 25rem;
-}
-.form-control {
-    color: white !important;
-    background-color: #262925 !important;
-    border-radius: .75rem !important;
-}
-.chat-box{
-  border-top-left-radius: 1.75rem;
-  border-top-right-radius: 1.75rem;
-  border-bottom-right-radius: 1.75em;
-  background-color: #EADEB1;
-}
-.chat-box:nth-child(1){
-  width: 50%;
-}
-.chat-box:nth-child(2){
-  width: 90%;
-}
-.chat-box:nth-child(3){
-  width: 50%;
-}
-.card{
-  border-radius: .75rem;
-  border: 0;
-}
-h1{
-  font-family: 'Oswald', sans-serif !important;
-  font-weight: 700 !important;
-  font-size: 20px !important;
-}
-h2{
-  font-family: 'Oswald', sans-serif !important;
-  font-size: 2.5em !important;
-  font-weight: 700 !important;
-}
-h4{
-  font-family: 'Oswald', sans-serif !important;
-}
-h5{
-text-align: center !important;
-}
-.text-yellow{
-  color: #E0AD2D;
-}
-a {
-  color: white;
-  text-decoration: none !important;
-  }
-  .comment-form-comment>textarea{
-    color: white;
-    font-weight: 400;
-    background-color: #262925 !important;
-    border-radius: .75rem !important;
-    padding: 1em !important;
-  }
-
-  .comment-form-author>input, .comment-form-email>input, .comment-form-url>input{
-    color: white !important;
-    font-weight: 400;
-    background-color: #262925 !important;
-    border-radius: .75rem !important;
-    padding: .5em !important;
-  }
-  .comment-form-comment>label, .comment-form-author>label, .comment-form-email>label, .comment-form-url>label{
-    font-weight: 600;
-}
-.form-submit>input{
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-  border-radius: .75rem !important;
-  padding: .5em !important;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-}
-
-.form-submit>input:hover{
-  background-color: #218838;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
+.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(191,143,29)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;}
+.navbar-light .navbar-toggler{border-color:rgb(191,143,29) !important;}
+.nav-item{background-color:rgba(0, 0, 0, 0.8);}
+.nav-item:hover{background-color:rgba(0, 0, 0, 0.5);}
+.rounded{border-radius:.75rem !important;}
+.my_margin{margin-top:25rem;}
+.form-control{color:white !important;background-color:#262925 !important;border-radius:.75rem !important;}
+.chat-box{border-top-left-radius:1.75rem;border-top-right-radius:1.75rem;border-bottom-right-radius:1.75em;background-color:#EADEB1;}
+.chat-box:nth-child(1){width:50%;}
+.chat-box:nth-child(2){width:90%;}
+.chat-box:nth-child(3){width:50%;}
+.card{border-radius:.75rem;border:0;}
+h1{font-family:'Oswald', sans-serif !important;font-weight:700 !important;font-size:20px !important;}
+h2{font-family:'Oswald', sans-serif !important;font-size:2.5em !important;font-weight:700 !important;}
+h4{font-family:'Oswald', sans-serif !important;}
+h5{text-align:center !important;}
+.text-yellow{color:#E0AD2D;}
+a{color:white;text-decoration:none !important;}
+.comment-form-comment>textarea{color:white;font-weight:400;background-color:#262925 !important;border-radius:.75rem !important;padding:1em !important;}
+.comment-form-author>input, .comment-form-email>input, .comment-form-url>input{color:white !important;font-weight:400;background-color:#262925 !important;border-radius:.75rem !important;padding:.5em !important;}
+.comment-form-comment>label, .comment-form-author>label, .comment-form-email>label, .comment-form-url>label{font-weight:600;}
+.form-submit>input{color:#fff;background-color:#28a745;border-color:#28a745;border-radius:.75rem !important;padding:.5em !important;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;}
+.form-submit>input:hover{background-color:#218838;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
 img.alignright{float:right;margin:-70px 0 1em 1em;}
 img.alignleft{float:left;margin:0 1em 1em 0;}
 img.aligncenter{display:block;margin-left:auto;margin-right:auto;margin-top:20px;margin-bottom:20px;}
@@ -122,141 +34,37 @@ a img.alignright{float:right;margin:-65px 0 1em 1em;}
 a img.alignleft{float:left;margin:0 1em 1em 0;}
 a img.aligncenter{display:block;margin-left:auto;margin-right:auto;}
 img#wpstats{display:none;}
-
-/* xs */
-@media (min-width: 320px) {
-  #home{
-    background:url(../img/home_bg_s.jpg) center;
-    height: 590px;
-  }
-  .nav-item{
-    width: 80%;
-  }
-  #horoscopo{
-    background: url(../img/horoscopo_bg_s.jpg) center;
-    background-repeat: no-repeat;
-  }
-  #nosotros{
-    background:  url(../img/nosotros_bg_s.jpg) center top;
-    height: 250px;
-  }
-  #espiritual{
-    background: url(../img/guiaespiritual_bg_s.jpg) center;
-    height: 250px;
-  }
-  h1{
-    font-size: 2em !important;
-  }
+@media (min-width:320px){#home{background:url(../img/home_bg_s.jpg) center;height:590px;}
+.nav-item{width:80%;}
+#horoscopo{background:url(../img/horoscopo_bg_s.jpg) center;background-repeat:no-repeat;}
+#nosotros{background:url(../img/nosotros_bg_s.jpg) center top;height:250px;}
+#espiritual{background:url(../img/guiaespiritual_bg_s.jpg) center;height:250px;}
+h1{font-size:2em !important;}
 }
-/* sm */
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .nav-item{
-    width: 50%;
-  }
-  #home{
-    background:url(../img/home_bg_s.jpg) center;
-    height: 595px;
-  }
-  #horoscopo{
-    background: url(../img/horoscopo_bg_s.jpg) center;
-    background-repeat: no-repeat;
-    height: 250px;
-  }
-  #nosotros{
-    background:  url(../img/nosotros_bg_s.jpg) center top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 435px;
-  }
-  h1{
-    font-size: 3em !important;
-  }
+@media (min-width:576px){.nav-item{width:50%;}
+#home{background:url(../img/home_bg_s.jpg) center;height:595px;}
+#horoscopo{background:url(../img/horoscopo_bg_s.jpg) center;background-repeat:no-repeat;height:250px;}
+#nosotros{background:url(../img/nosotros_bg_s.jpg) center top;background-size:100%;background-repeat:no-repeat;height:435px;}
+h1{font-size:3em !important;}
 }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #home{
-    background:url(../img/home_bg_md.jpg) center;
-    height: 700px;
-  }
-  #horoscopo{
-    background: url(../img/horoscopo_bg_md.jpg) center;
-    height: 500px;
-  }
-  #nosotros{
-    background:  url(../img/nosotros_bg_md.jpg) center left;
-    height: 716px;
-  }
-  #nosotros2{
-    background:  url(../img/nosotrosdos_bg_md.jpg) center;
-    height: 870px;
-  }
-  #espiritual{
-    background: url(../img/guiaespiritual_bg_md.jpg) center;
-    height: 923px;
-  }
-  h1{
-    font-size: 4em !important;
-  }
+@media (min-width:768px){#home{background:url(../img/home_bg_md.jpg) center;height:700px;}
+#horoscopo{background:url(../img/horoscopo_bg_md.jpg) center;height:500px;}
+#nosotros{background:url(../img/nosotros_bg_md.jpg) center left;height:716px;}
+#nosotros2{background:url(../img/nosotrosdos_bg_md.jpg) center;height:870px;}
+#espiritual{background:url(../img/guiaespiritual_bg_md.jpg) center;height:923px;}
+h1{font-size:4em !important;}
 }
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .nav-item{
-    width: 30%;
-  }
-  #home{
-    background:url(../img/home_bg_xl.jpg) center;
-  }
-  #horoscopo{
-    background: url(../img/horoscopo_bg_xl.jpg) center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  #nosotros{
-    background:  url(../img/nosotros_bg_xl.jpg) center;
-    background-repeat: no-repeat;
-    height: 720px;
-  }
-  #nosotros2{
-    background:  url(../img/nosotrosdos_bg_xl.jpg) center;
-    background-repeat: no-repeat;
-    height: 700px;
-  }
-  #espiritual{
-    background: url(../img/guiaespiritual_bg_xl.jpg) center;
-    background-repeat: no-repeat;
-  }
-  .my_margin{
-    margin-top: 15rem;
-  }
-  h1{
-    font-size: 5em !important;
-  }
+@media (min-width:992px){.nav-item{width:30%;}
+#home{background:url(../img/home_bg_xl.jpg) center;}
+#horoscopo{background:url(../img/horoscopo_bg_xl.jpg) center;background-size:100%;background-repeat:no-repeat;}
+#nosotros{background:url(../img/nosotros_bg_xl.jpg) center;background-repeat:no-repeat;height:720px;}
+#nosotros2{background:url(../img/nosotrosdos_bg_xl.jpg) center;background-repeat:no-repeat;height:700px;}
+#espiritual{background:url(../img/guiaespiritual_bg_xl.jpg) center;background-repeat:no-repeat;}
+.my_margin{margin-top:15rem;}
+h1{font-size:5em !important;}
 }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  #home{
-    height: 555px;
-  }
-  #nosotros{
-    background:  url(../img/nosotros_bg_xl.jpg) center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 720px;
-  }
-  #nosotros2{
-    background:  url(../img/nosotrosdos_bg_xl.jpg) center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 700px;
-  }
-  #espiritual{
-    background: url(../img/guiaespiritual_bg_xl.jpg) center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 790px;
-  }
+@media (min-width:1200px){#home{height:555px;}
+#nosotros{background:url(../img/nosotros_bg_xl.jpg) center;background-repeat:no-repeat;background-size:100%;height:720px;}
+#nosotros2{background:url(../img/nosotrosdos_bg_xl.jpg) center;background-repeat:no-repeat;background-size:100%;height:700px;}
+#espiritual{background:url(../img/guiaespiritual_bg_xl.jpg) center;background-repeat:no-repeat;background-size:100%;height:790px;}
 }

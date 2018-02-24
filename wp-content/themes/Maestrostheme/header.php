@@ -45,7 +45,7 @@
             </nav>
           </div>
           <div class="align-items-end ">
-            <a class="pr-3" href="<?php echo get_page_link(5); ?>"><img src="<?php bloginfo('template_url'); ?>/img/Cart.png"></a>
+            <a class="pr-3" href="<?php echo get_page_link(5); ?>"><img src="<?php bloginfo('template_url'); ?>/img/cart.png"></a>
             <a class="pl-3" href="<?php echo get_page_link(7); ?>"><img src="<?php bloginfo('template_url'); ?>/img/User.png"></a>
           </div>
         </div>

@@ -1,200 +1,24 @@
-.products ul{
-  max-width: 1920px;
-  font-size: .5em;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  display: flex;
-  align-items: stretch;
-}
-
-.products ul li{
-  width: 300px;
-  margin: 1em;
-  background-color: #DAD7CA;
-  border-radius: .75rem;
-  height: auto;
-  padding-bottom: 1em;
-}
-
-.products ul li h2{
-  color: #1C1A18;
-  font-family: 'roboto' sans-serif;
-  font-weight: 200;
-  font-size: 2.5em;
-  padding: .8em 0 0 0;
-  text-align: center;
-}
-
-.woocommerce-Price-amount{
-  font-size: 2em;
-  padding-left: 2em;
-  float: left;
-  color: black;
-  font-weight: 700;
-  line-height: 3;
-  margin-right: .5em;
-}
-
-.add_to_cart_button {
-  color:  white !important;
-}
-
-.btn-dorado, .single_add_to_cart_button{
-  background-color: #E0AD2D !important;
-  margin: .2em;
-  color: white;
-}
-
-.btn-dorado:hover, .single_add_to_cart_button:hover{
-  background-color: #d4a632 !important;
-}
-
-.woocommerce a.button{
-    padding: 0 !important;
-    font-size: 1em !important;
-    background-color: transparent !important;
-}
-
-.woocommerce .button{
-  margin-top: 0 !important;
-}
-
-select.orderby{
-    margin: 10px;
-    background-color: black;
-    color: #E0AD2D;
-}
-
-.woocommerce ul.products li.product a img {
-    margin: 0 0 0;
-}
-
-ul.products{
-  max-width: 1920px;
-  font-size: .5em;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  display: flex;
-  align-items: stretch;
-}
-
-ul.products li.product{
-  width: 250px;
-  margin: 1em;
-  background-color: #DAD7CA;
-  border-radius: .75rem;
-  height: auto;
-  padding-bottom: 1em;
-}
-
-ul.products li.product h2{
-  color: #1C1A18;
-  font-family: 'roboto' sans-serif;
-  font-weight: 200;
-  font-size: 2.5em !important;
-  text-align: center;
-  padding: .8em .4em 0 .4em !important;
-}
-
-div.berocket_lgv_additional_data {
-    width: 100% !important;
-}
-
-.woocommerce ul.products .product.berocket_lgv_list:nth-child(n), .woocommerce-page ul.products .product.berocket_lgv_list:nth-child(n) {
-    float: left;
-    margin-bottom: 1em;
-    margin-right: 24.2em;
-}
-
-
-.woocommerce #review_form #respond .form-submit input {
-  color: #fff;
-  background-color: #E0AD2D;
-  font-family: 'Oswald', sans-serif !important;
-  line-height: 1.5;
-  border-radius: .3rem;
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.woocommerce #review_form #respond .form-submit input:hover {
-  background-color: #d4a632;
-}
-
-.col-1, .col-2 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
-}
-
-.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
-    width: 100%;
-    color: white;
-    font-weight: 400;
-    background-color: #262925 !important;
-    border-radius: .75rem !important;
-    padding: 1em !important;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    background-color: #262925 !important;
-    color: white !important;
-    border-radius: .25rem !important;
-}
-
-#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
-    display: block;
-    text-align: center;
-    padding: 1em !important;
-    background-color: #E0AD2D !important;
-    margin: auto;
-    color: white;
-    width: 50%;
-}
-
-#add_payment_method .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button:hover {
-  background-color: #d4a632;
-}
-
-/* xs */
-@media (min-width: 320px) {
-  .col-1, .col-2 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100% !important;
-      max-width: 100% !important;
-  }
-}
-/* sm */
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
+.products ul{max-width:1920px;font-size:.5em;flex-wrap:wrap;justify-content:space-between;display:flex;align-items:stretch;}
+.products ul li{width:300px;margin:1em;background-color:#DAD7CA;border-radius:.75rem;height:auto;padding-bottom:1em;}
+.products ul li h2{color:#1C1A18;font-family:'roboto' sans-serif;font-weight:200;font-size:2.5em;padding:.8em 0 0 0;text-align:center;}
+.woocommerce-Price-amount{font-size:2em;padding-left:2em;float:left;color:black;font-weight:700;line-height:3;margin-right:.5em;}
+.add_to_cart_button{color:white !important;}
+.btn-dorado, .single_add_to_cart_button{background-color:#E0AD2D !important;margin:.2em;color:white;}
+.btn-dorado:hover, .single_add_to_cart_button:hover{background-color:#d4a632 !important;}
+.woocommerce a.button{padding:0 !important;font-size:1em !important;background-color:transparent !important;}
+.woocommerce .button{margin-top:0 !important;}
+select.orderby{margin:10px;background-color:black;color:#E0AD2D;}
+.woocommerce ul.products li.product a img{margin:0 0 0;}
+ul.products{max-width:1920px;font-size:.5em;flex-wrap:wrap;justify-content:space-between;display:flex;align-items:stretch;}
+ul.products li.product{width:250px;margin:1em;background-color:#DAD7CA;border-radius:.75rem;height:auto;padding-bottom:1em;}
+ul.products li.product h2{color:#1C1A18;font-family:'roboto' sans-serif;font-weight:200;font-size:2.5em !important;text-align:center;padding:.8em .4em 0 .4em !important;}
+div.berocket_lgv_additional_data{width:100% !important;}
+.woocommerce ul.products .product.berocket_lgv_list:nth-child(n), .woocommerce-page ul.products .product.berocket_lgv_list:nth-child(n){float:left;margin-bottom:1em;margin-right:24.2em;}
+.woocommerce #review_form #respond .form-submit input{color:#fff;background-color:#E0AD2D;font-family:'Oswald', sans-serif !important;line-height:1.5;border-radius:.3rem;display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.woocommerce #review_form #respond .form-submit input:hover{background-color:#d4a632;}
+.col-1, .col-2{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50% !important;max-width:50% !important;}
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{width:100%;color:white;font-weight:400;background-color:#262925 !important;border-radius:.75rem !important;padding:1em !important;}
+.select2-container--default .select2-selection--single .select2-selection__rendered{background-color:#262925 !important;color:white !important;border-radius:.25rem !important;}
+#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button{display:block;text-align:center;padding:1em !important;background-color:#E0AD2D !important;margin:auto;color:white;width:50%;}
+#add_payment_method .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button:hover{background-color:#d4a632;}
+@media (min-width:320px){.col-1, .col-2{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100% !important;max-width:100% !important;}}

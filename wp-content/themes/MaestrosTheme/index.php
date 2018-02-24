@@ -20,11 +20,14 @@
           <div class="col-sm-12 col-md-6 text-center pt-3">
             <div class="row justify-content-center">
               <div class="col-5">
-                <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-text="Llámanos" data-color="#28A745"></span>
-                <!-- <div class="skype-chat">
-                  <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-color="#00A941">
-                    <button type="button" class="btn btn-success btn-lg btn-block"><img src="<//?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
+
+                  <span class="skype-button rounded" data-contact-id="live:maestrosconsagrados" data-color="#00A941">
+                    <button type="button" class="btn btn-success btn-lg btn-block"><img src="<?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
                   </span>
+
+                <!-- <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-text="Llámanos" data-color="#28A745"></span> -->
+                <!-- <div class="skype-chat">
+
                   <span class="skype-chat" data-color-message="#00A941"></span>
                 </div> -->
               </div>
@@ -202,13 +205,9 @@
             </div>
             <div class="row justify-content-center pt-2">
               <div class="col-5">
-                  <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-text="Llámanos" data-color="#28A745"></span>
-                <!-- <div class="skype-chat">
-                  <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-color="#00A941">
-                    <button type="button" class="btn btn-success btn-block rounded"><img src="<//?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
+                  <span class="skype-button rounded" data-contact-id="live:maestrosconsagrados" data-color="#00A941">
+                    <button type="button" class="btn btn-success btn-lg btn-block"><img src="<?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
                   </span>
-                  <span class="skype-chat" data-color-message="#00A941"></span>
-                </div> -->
               </div>
             </div>
           </div>

@@ -38,7 +38,6 @@
         </div>
       </div>
     </footer>
-    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
     <?php wp_footer(); ?>
     <script type="text/javascript">
     var scroll = new SmoothScroll('a[href*="#"]', {
@@ -52,5 +51,6 @@
       after: function () {}
     });
   </script>
+  <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
   </body>
 </html>
