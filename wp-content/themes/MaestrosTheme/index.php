@@ -20,15 +20,16 @@
           <div class="col-sm-12 col-md-6 text-center pt-3">
             <div class="row justify-content-center">
               <div class="col-5">
-                <div class="skype-chat">
+                <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-text="Llámanos" data-color="#28A745"></span>
+                <!-- <div class="skype-chat">
                   <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-color="#00A941">
-                    <button type="button" class="btn btn-success btn-lg btn-block"><img src="<?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
+                    <button type="button" class="btn btn-success btn-lg btn-block"><img src="<//?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
                   </span>
                   <span class="skype-chat" data-color-message="#00A941"></span>
-                </div>
+                </div> -->
               </div>
             </div>
-            <p class="text-white">La llamada no tiene ningún costo.</p>
+            <p class="text-white">La llamada no tiene ningún costo, su operador telefónico puede aplicar los cargos estipulados.</p>
           </div>
         </div>
       </div>
@@ -95,19 +96,19 @@
             <h1 class="text-white pt-5 pb-md-4 pb-lg-5 float-sm-right">NOSOTROS</h1><br>
           </div>
           <div class="d-none d-sm-none d-md-block col-md-8 col-lg-7 col-xl-8 rounded bg-gray-dark p-4">
-            <p class="text-white">Maestros Consagrados, Entregamos nuestras vidas al servicio del prójimo, somos descendientes de tribus antiguas, especializados en diferentes ciencias, de esta manera podemos ofrecer asesoría directa en campos como: la eclíptica, la astrología, la medicina natural, la Botánica, el espiritismo, La auto sanación, la parapsicología, la metafísica, las cartas sagradas y practicas avanzadas de magia y hechicería, pretendemos asesorar de una manera integral y completa a todas aquellas personas que se encuentran experimentando algún tipo de sufrimiento en su cuerpo físico o a nivel espiritual, con prácticas heredadas de nuestros antepasados, adoptamos el celibato como principio a nuestros ancestros, consagrándonos como maestros dadores de los resultados más efectivos y ofrecemos nuestra espiritualidad consagrada para darle solución a todo.</p>
+            <p class="text-white">Maestros Consagrados, Entregamos nuestras vidas al servicio del prójimo, somos descendientes de tribus antiguas, especializados en diferentes ciencias, de esta manera podemos ofrecer asesoría directa en campos como: la eclíptica, la astrología, la medicina natural, la Botánica, el espiritismo, La auto sanación, la parapsicología, la metafísica, las cartas sagradas y prácticas avanzadas de magia y hechicería, pretendemos asesorar de una manera integral y completa a todas aquellas personas que se encuentran experimentando algún tipo de sufrimiento en su cuerpo físico o a nivel espiritual, con prácticas heredadas de nuestros antepasados, adoptamos el celibato como principio a nuestros ancestros, consagrándonos como maestros dadores de los resultados más efectivos y ofrecemos nuestra espiritualidad consagrada para darle solución a todo.</p>
           </div>
         </div>
       </div>
     </section>
     <div class="d-block d-md-none bg-gray-dark p-4">
-      <p class="text-white">Maestros Consagrados, Entregamos nuestras vidas al servicio del prójimo, somos descendientes de tribus antiguas, especializados en diferentes ciencias, de esta manera podemos ofrecer asesoría directa en campos como: la eclíptica, la astrología, la medicina natural, la Botánica, el espiritismo, La auto sanación, la parapsicología, la metafísica, las cartas sagradas y practicas avanzadas de magia y hechicería, pretendemos asesorar de una manera integral y completa a todas aquellas personas que se encuentran experimentando algún tipo de sufrimiento en su cuerpo físico o a nivel espiritual, con prácticas heredadas de nuestros antepasados, adoptamos el celibato como principio a nuestros ancestros, consagrándonos como maestros dadores de los resultados más efectivos y ofrecemos nuestra espiritualidad consagrada para darle solución a todo.</p>
+      <p class="text-white">Maestros Consagrados, Entregamos nuestras vidas al servicio del prójimo, somos descendientes de tribus antiguas, especializados en diferentes ciencias, de esta manera podemos ofrecer asesoría directa en campos como: la eclíptica, la astrología, la medicina natural, la Botánica, el espiritismo, La auto sanación, la parapsicología, la metafísica, las cartas sagradas y prácticas avanzadas de magia y hechicería, pretendemos asesorar de una manera integral y completa a todas aquellas personas que se encuentran experimentando algún tipo de sufrimiento en su cuerpo físico o a nivel espiritual, con prácticas heredadas de nuestros antepasados, adoptamos el celibato como principio a nuestros ancestros, consagrándonos como maestros dadores de los resultados más efectivos y ofrecemos nuestra espiritualidad consagrada para darle solución a todo.</p>
     </div>
     <section id="nosotros2" class="container-fluid d-none d-md-block">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-4 col-lg-6 offset-lg-6 rounded bg-gray-dark p-4 my_margin">
-            <p class="text-white">Nuestras terapias avanzadas están enfocadas a tratar los aspectos más críticos que pueden llegar a afectar a una persona solitaria, así como también a una pareja, una familia o incluso una comunidad. Durante el tiempo que se lleve este proceso es necesario el total compromiso de la persona interesada y el cumplimiento de cada uno de los métodos implementados, ya que con un verdadero compromiso se podra obtner los resultados esperados podrás conseguir lo que desees y el objetivo que tanto anhelas de la mano de los verdaderos Maestros Consagrados.</p>
+            <p class="text-white">Nuestras terapias avanzadas están enfocadas a tratar los aspectos más críticos que pueden llegar a afectar a una persona solitaria, así como también a una pareja, una familia o incluso una comunidad. Durante el tiempo que se lleve este proceso es necesario el total compromiso de la persona interesada y el cumplimiento de cada uno de los métodos implementados, ya que con un verdadero compromiso se podra obtener los resultados esperados podrás conseguir lo que desees y el objetivo que tanto anhelas de la mano de los verdaderos Maestros Consagrados.</p>
           </div>
         </div>
       </div>
@@ -157,7 +158,7 @@
             <h1 class="text-center text-white float-sm-right float-md-left">GUÍA ESPIRITUAL</h1><br>
           </div>
           <div class="d-none d-md-block col-md-8 rounded bg-gray-dark p-4 mb-4">
-            <p class="text-white">Son tratamientos intensivos involucran a los participantes en una profunda exploración personal de su propia naturaleza espiritual, y logra crear una conciencia firme de cada situación, a tal punto que llegamos a encontrar la raíz del problema, eliminamos toda la afectación y sufrimiento del ámbito personal. Nuestro objetivo es establecer un equilibrio en su vida, fortalecer el poder creativo que lleva dentro de usted, fundamentar el balance natural del cuerpo y el espíritu, esto se verá reflejado en su entorno, usted mismo verá los cambios de inmediato, todo a su alrededor cambiara y se acomodara a su favor</p>
+            <p class="text-white">Son tratamientos intensivos involucran a los participantes en una profunda exploración personal de su propia naturaleza espiritual, y logra crear una conciencia firme de cada situación, a tal punto que llegamos a encontrar la raíz del problema, eliminamos toda la afectación y sufrimiento del ámbito personal. Nuestro objetivo es establecer un equilibrio en su vida, fortalecer el poder creativo que lleva dentro de usted, fundamentar el balance natural del cuerpo y el espíritu, esto se verá reflejado en su entorno, usted mismo verá los cambios de inmediato, todo a su alrededor cambiará y se acomodará a su favor</p>
           </div>
           <div class="d-none d-md-block col-md-8 offset-md-4 col-lg-5 offset-lg-7 rounded bg-gray-dark p-3">
             <p class="text-white">Los tratamientos se organizan y se programan para cada persona en particular, dependiendo de factores como la edad, el peso, la enfermedad que padezca y el tiempo de incubación de dicho mal o dolencia espiritual, corporal o para el objetivo que desea alcanzar, nuestros productos son 100% de origen natural y sus compuestos son extractos de tallos, flores, raíces y frutos traídos directamente de lugares consagrados</p>
@@ -166,7 +167,7 @@
       </div>
     </section>
     <div class="d-block d-md-none bg-gray-dark p-4">
-      <p class="text-white">Son tratamientos intensivos involucran a los participantes en una profunda exploración personal de su propia naturaleza espiritual, y logra crear una conciencia firme de cada situación, a tal punto que llegamos a encontrar la raíz del problema, eliminamos toda la afectación y sufrimiento del ámbito personal. Nuestro objetivo es establecer un equilibrio en su vida, fortalecer el poder creativo que lleva dentro de usted, fundamentar el balance natural del cuerpo y el espíritu, esto se verá reflejado en su entorno, usted mismo verá los cambios de inmediato, todo a su alrededor cambiara y se acomodara a su favor</p>
+      <p class="text-white">Son tratamientos intensivos involucran a los participantes en una profunda exploración personal de su propia naturaleza espiritual, y logra crear una conciencia firme de cada situación, a tal punto que llegamos a encontrar la raíz del problema, eliminamos toda la afectación y sufrimiento del ámbito personal. Nuestro objetivo es establecer un equilibrio en su vida, fortalecer el poder creativo que lleva dentro de usted, fundamentar el balance natural del cuerpo y el espíritu, esto se verá reflejado en su entorno, usted mismo verá los cambios de inmediato, todo a su alrededor cambiará y se acomodará a su favor</p>
     </div>
     <section class="bg-gray-dark container-fluid">
       <div class="container">
@@ -177,7 +178,6 @@
         </div>
       </div>
     </section>
-    <!--Contacto-->
     <section class="bg-gray-light container-fluid pb-5" id="contacto">
       <div class="container">
         <div class="row">
@@ -194,7 +194,7 @@
                 <p class="pt-2 pl-3 pb-2 font-weight-bold">Hola<br>¿Cómo estás?</p>
               </div>
               <div class="chat-box">
-                <p class="pt-2 pl-3 pb-2 font-weight-bold">llámanos estamos para ayudarte en lo que necesites.</p>
+                <p class="pt-2 pl-3 pb-2 font-weight-bold">Llámanos estamos para ayudarte en lo que necesites.</p>
               </div>
               <div class="chat-box">
                 <p class="pt-2 pl-3 pb-2 font-weight-bold">Si no atendemos a su llamada, insista varias veces.</p>
@@ -202,12 +202,13 @@
             </div>
             <div class="row justify-content-center pt-2">
               <div class="col-5">
-                <div class="skype-chat">
+                  <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-text="Llámanos" data-color="#28A745"></span>
+                <!-- <div class="skype-chat">
                   <span class="skype-button rounded" data-contact-id="Maestros Consagrados" data-color="#00A941">
-                    <button type="button" class="btn btn-success btn-block rounded"><img src="<?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
+                    <button type="button" class="btn btn-success btn-block rounded"><img src="<//?php bloginfo('template_url'); ?>/img/phone-call.png"></button>
                   </span>
                   <span class="skype-chat" data-color-message="#00A941"></span>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
