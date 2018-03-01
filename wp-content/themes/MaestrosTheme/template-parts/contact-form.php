@@ -18,7 +18,7 @@
       <textarea name="mensaje" class="form-control text-white" rows="3" placeholder="Mensaje" length="400" required></textarea>
     </div>
     <div class="d-flex justify-content-center mb-3">
-      <button name="submit" type="submit" value="submit" class="btn btn-success rounded">ENVIAR</button>
+      <button name="submit" type="submit" value="submit" class="btn btn-lg btn-success rounded">ENVIAR</button>
     </div>
   </form>
 </div>

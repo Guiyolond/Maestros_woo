@@ -34,8 +34,9 @@ a img.alignright{float:right;margin:-65px 0 1em 1em;}
 a img.alignleft{float:left;margin:0 1em 1em 0;}
 a img.aligncenter{display:block;margin-left:auto;margin-right:auto;}
 img#wpstats{display:none;}
+.div-skype{height: 80px; width: 270px;}
 @media (min-width:320px){#home{background:url(../img/home_bg_s.jpg) center;height:590px;}
-.nav-item{width:80%;}
+.nav-item{width:300%;}
 #horoscopo{background:url(../img/horoscopo_bg_s.jpg) center;background-repeat:no-repeat;}
 #nosotros{background:url(../img/nosotros_bg_s.jpg) center top;height:250px;}
 #espiritual{background:url(../img/guiaespiritual_bg_s.jpg) center;height:250px;}

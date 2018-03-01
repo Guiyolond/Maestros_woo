@@ -51,6 +51,15 @@
       after: function () {}
     });
   </script>
-  <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+  <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+  <script type="text/javascript">
+              Skype.ui({
+              "name": "chat",
+              "element": "SkypeButton_Call_live:maestrosconsagrados_2",
+              "participants": ["live:maestrosconsagrados"],
+              "imageColor": "white",
+              "imageSize": 24
+              });
+  </script>
   </body>
 </html>
