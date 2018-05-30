@@ -1,31 +1,108 @@
 <?php get_header(); ?>
     <section id="home" class="container-fluid pb-5 pt-5">
-      <div class="d-flex justify-content-center pt-5 mt-5">
-        <img src="<?php bloginfo('template_url'); ?>/img/simbolo.png">
-      </div>
-      <div class="d-flex justify-content-center pt-4">
-        <p class="text-yellow text-center">BIENVENIDO<br> A LO QUE NO PUEDES COMPRENDER</p>
-      </div>
-      <div class="d-flex justify-content-center pt-4 pb-5">
-        <a href="#llamar"><img src="<?php bloginfo('template_url'); ?>/img/arrow.png"></a>
-      </div>
-    </section>
-    <section class="bg-gray" id="llamar">
-      <div class="container">
-        <div class="row pt-3 pb-3">
-          <div class="col-sm-12 col-md-6 text-center pt-3">
-            <h4 class="text-white">VEA SU HORÓSCOPO PODEROSO SEMANAL GRATIS</h4>
-            <p class="text-white">Tenemos un nuevo horóscopo Poderoso cada semana<br> preparado para usted por los Mejores Maestros Consagrados</p>
-          </div>
-          <div class="col-sm-12 col-md-6 text-center pt-3">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <button type="button" name="button" class="btn btn-success btn-lg">
-                        <a class="text-white" href="tel:+1 404 826 02 53">Llama ahora +1 404 826 02 53</a>
-                    </button>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-4 d-none d-md-block pt-2 mt-3">
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Le va mal en el amor?</h5></a>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Siente que lo engañan?</h5></a>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿El dinero no le rinde?</h5></a>
+                  </div>
                 </div>
             </div>
-            <p class="text-white">La llamada no tiene ningún costo para usuarios en Estados unidos y Canadá.</p>
+            <div class="col-lg-4 col-md-4 order-md-0 col-sm-12">
+                <div class="d-flex justify-content-center pt-2 mt-2">
+                  <img src="<?php bloginfo('template_url'); ?>/img/simbolo.png">
+                </div>
+                <div class="d-flex justify-content-center pt-2">
+                  <h6 class="text-yellow text-center">BIENVENIDO<br> A LO QUE NO PUEDES COMPRENDER</h6>
+                </div>
+                <div class="d-flex justify-content-center pt-4 pb-5 animated infinite pulse">
+                  <a href="tel:+1 202-239-8371"><img src="<?php bloginfo('template_url'); ?>/img/icon-whatsapp.png"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 d-none d-md-block pt-2 mt-3">
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Siente un mal en usted?</h5></a>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Padece una enfermedad incurable?</h5></a>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Todo en su vida anda mal?</h5></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid pb-1 pt-1 bg-gray-dark d-block d-md-none">
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Le va mal en el amor?</h5></a>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Siente que lo engañan?</h5></a>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿El dinero no le rinde?</h5></a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Siente un mal en usted?</h5></a>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Padece una enfermedad incurable?</h5></a>
+                  </div>
+                </div>
+                <div class="card text-white bg-dark mb-1 animated flipInY">
+                  <div class="card-body animated bounce">
+                    <a href="<?php echo get_page_link(4); ?>"><h5 class="text-white card-text">¿Todo en su vida anda mal?</h5></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-dark">
+      <div class="container">
+        <div class="row pt-2 pb-3">
+          <div class="col-sm-12 col-md-4 text-center pt-3">
+            <h5 class="text-yellow">VEA SU HOROSCOPO Y EL DE SU PAREJA, PREDECIMOS Y CAMBIAMOS SU FUTURO. ES GRATIS.</h5>
+          </div>
+          <div class="col-sm-12 col-md-4 text-center pt-3">
+            <div class="row justify-content-center">
+                <div class="col-12 animated infinite pulse d-flex justify-content-center">
+                    <a class="text-white animated infinite flash" id="llamar" href="tel:+1 202-239-8371"></a>
+                </div>
+            </div>
+            <p class="text-white animated infinite pulse">+1 202-239-8371 WhatsApp <a href="tel:+1 202-239-8371"><img src="<?php bloginfo('template_url'); ?>/img/icon-whatsapp.png"></a></p>
+          </div>
+          <div class="col-sm-12 col-md-4 text-center pt-3">
+            <h5 class="text-yellow">La llamada es gratis en Estados Unidos y Canadá desde teléfonos móviles y fijos, y para el resto de países llamar por WhatsApp.</h5>
           </div>
         </div>
       </div>
@@ -135,11 +212,11 @@
             ?>
           </ul>
         </div>
-        <div class="col-12 pt-5 pb-2">
+        <div class="col-12 pt-5 pb-2 animated infinite swing">
           <a href="<?php echo get_page_link(4); ?>"><img class="mx-auto d-block" src="<?php bloginfo('template_url'); ?>/img/mas-01.png"></a>
         </div>
         <div class="col-12">
-          <p class="text-yellow text-center">MIRA NUESTROS SERVICIOS Y PRODUCTOS</p>
+          <p class="text-yellow text-center">CLIC EN EL ICONO PARA CONOCER NUESTROS SERVICIOS.</p>
         </div>
         <div class="col-12 pb-3">
           <p class="text-white text-center">PREGUNTE POR LA SOLUCIÓN DEL PROBLEMA QUE NECESITE</p>
@@ -172,37 +249,12 @@
             <h4 class="text-white text-center">Con una llamada tu vida cambiará completamente, los maestros consagrados<br> hemos ayudado a miles de personas en todo el mundo.</h4><br> <p class="text-yellow text-center">POR AMOR A SU SANACIÓN LLÁMANOS Y LE DAREMOS SOLUCIÓN A SU PROBLEMA</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="bg-gray-light container-fluid pb-5" id="contacto">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 pt-5">
-            <h2 class="text-yellow text-center">Escribenos o Llámanos</h2>
-          </div>
-          <div class="col-12 pb-3">
-            <h4 class="text-center">QUEREMOS RESOLVER SUS PROBLEMAS</h4>
-          </div>
-          <?php get_template_part( 'template-parts/contact-form', '' ); ?>
-          <div class="col-md-12 col-lg-6">
-            <div class="bg-gray-dark rounded pt-3 pl-3 pb-3">
-              <div class="chat-box">
-                <p class="pt-2 pl-3 pb-2 font-weight-bold">Hola<br>¿Cómo estás?</p>
-              </div>
-              <div class="chat-box">
-                <p class="pt-2 pl-3 pb-2 font-weight-bold">Llámanos estamos para ayudarte en lo que necesites.</p>
-              </div>
-              <div class="chat-box">
-                <p class="pt-2 pl-3 pb-2 font-weight-bold">Si no atendemos a su llamada, insista varias veces.</p>
-              </div>
+        <div class="row justify-content-center" id="contacto">
+            <div class="col-12 animated infinite pulse d-flex justify-content-center">
+                <a class="text-white animated infinite flash" id="llamar02" href="tel:+1 202-239-8371"></a>
             </div>
-            <div class="row justify-content-center pt-2">
-              <div class="col">
-                  <div id="SkypeButton_Call_live:maestrosconsagrados_2" class="btn btn-success div-skype"></div>
-              </div>
-            </div>
-          </div>
+            <p class="text-white animated infinite pulse">+1 202-239-8371 WhatsApp <a href="tel:+1 202-239-8371"><img src="<?php bloginfo('template_url'); ?>/img/icon-whatsapp.png"></a></p>
         </div>
+
       </div>
-    </section>
 <?php get_footer(); ?>
