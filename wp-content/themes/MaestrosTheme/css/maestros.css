@@ -63,12 +63,6 @@ img#wpstats{display:none;}
 #nosotros{background:url(../img/nosotros_bg_s.jpg) center top;height:250px;}
 #espiritual{background:url(../img/guiaespiritual_bg_s.jpg) center;height:250px;}
 h1{font-size:2em !important;}
-}
-@media (min-width:576px){
-.nav-item{width:50%;}
-#horoscopo{background:url(../img/horoscopo_bg_s.jpg) center;background-repeat:no-repeat;height:250px;}
-#nosotros{background:url(../img/nosotros_bg_s.jpg) center top;background-size:100%;background-repeat:no-repeat;height:435px;}
-h1{font-size:3em !important;}
 @-webkit-keyframes backgroundHome {
   0% {
     background-image: url('../img/mal-amor-s.jpg');
@@ -114,6 +108,11 @@ h1{font-size:3em !important;}
   }
 }
 }
+@media (min-width:576px){
+.nav-item{width:50%;}
+#horoscopo{background:url(../img/horoscopo_bg_s.jpg) center;background-repeat:no-repeat;height:250px;}
+#nosotros{background:url(../img/nosotros_bg_s.jpg) center top;background-size:100%;background-repeat:no-repeat;height:435px;}
+h1{font-size:3em !important;}
 @-webkit-keyframes backgroundHome {
   0% {
     background-image: url('../img/mal-amor-s.jpg');
