@@ -417,7 +417,12 @@ abstract class Order_Document {
 		} else {
 			$text = $default;
 		}
-		return apply_filters( "wpo_wcpdf_{$settings_key}", $text, $this );
+		// legacy filters
+		if ( in_array( $settings_key, array( 'shop_name', 'shop_address', 'footer', 'extra_1', 'extra_2', 'extra_3' ) ) ) {
+			$text = apply_filters( "wpo_wcpdf_{$settings_key}", $text, $this );
+		}
+
+		return apply_filters( "wpo_wcpdf_{$settings_key}_settings_text", $text, $this );
 	}
 
 	/**
@@ -512,7 +517,11 @@ abstract class Order_Document {
 		);
 		$args = $args + $default_args;
 
-		$html = $this->render_template( $this->locate_template_file( "{$this->type}.php" ) );
+		$html = $this->render_template( $this->locate_template_file( "{$this->type}.php" ), array(
+				'order' => $this->order,
+				'order_id' => $this->order_id,
+			)
+		);
 		if ($args['wrap_html_content']) {
 			$html = $this->wrap_html_content( $html );
 		}

@@ -2,8 +2,8 @@
 Contributors: automattic, woothemes, allendav, kellychoffman, jkudish, jeffstieler, nabsul, robobot3000, danreylop, mikeyarce, shaunkuschel, orangesareorange, pauldechov, dappermountain
 Tags: canada-post, shipping, stamps, usps, woocommerce, taxes, payment, stripe
 Requires at least: 4.6
-Tested up to: 4.9.2
-Stable tag: 1.11.0
+Tested up to: 4.9.5
+Stable tag: 1.14.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -87,8 +87,66 @@ The source code is freely available [in GitHub](https://github.com/Automattic/wo
 7. Enabling automated taxes
 8. Creating a Stripe account from the setup wizard
 9. Checking on the health of WooCommerce Services
+10. Checking and exporting the label purchase reports
 
 == Changelog ==
+
+= 1.14.1 =
+* Fix error when adding shipping method price adjustments
+
+= 1.14.0 =
+* GDPR - Added WCS section to the privacy policy guide
+* GDPR - Support for personal data export functionality
+* GDPR - Support for personal data erasure functionality
+* Minor changes to the settings page UI
+* Fix the PHP warning on the Status page when logs are empty
+* Fix log file retrieval on Status page to work with new WC 3.4 format that includes the date
+* Add error message on manual service data refresh failure
+
+= 1.13.3 =
+* Fix broken admin after product featured in 'missing weight' notice is deleted
+
+= 1.13.2 =
+* Fix PHP Warning when the server cannot be reached for shipping rates or products are missing dimensions
+
+= 1.13.1 =
+* Fix PHP Warning for individually packed shipping rates
+
+= 1.13.0 =
+* Show customer selected shipping rate when purchasing a shipping label
+* Add shipping labels to Reports
+* Add USPS signature requirement support to label purchase
+* Add link to view receipt for Shipping Labels
+* Fix bug showing incorrect shipping label rates when changing packages
+* Fix styling for purchasing shipping labels on mobile devices
+* Prevent incompatible settings for Automated Taxes
+* Fix duplicate "packages" section in Shipping Settings (Advanced Shipping Packages extension compatibility)
+* Add "copy to clipboard" button to debug logs on Status page
+* Improved error messaging
+* Fix unnecessary shipping rates requests made in the Dashboard
+* Fix PHP Warning when saving Tax settings
+* Add caching to Shipping Rate requests
+
+= 1.12.3 =
+* Fixed PHP Fatal when PayPal Express Checkout has not fully initialized
+
+= 1.12.2 =
+* Fix some REST API calls being erroneously cached by certain hosting providers
+
+= 1.12.1 =
+* Fix missing file in 1.12.0 plugin release
+
+= 1.12.0 =
+* Add email receipts for purchased shipping labels
+* Clean up Stripe account keys when deauthorized
+* Fix bug in database migration script for older plugin versions
+* Add "back to order" link when adding a credit card from order details
+* Add frontend debugging messages for shipping rates
+* Separate troubleshooting logs by feature (taxes, shipping, etc)
+* Avoid making unnecessary automated tax requests
+* Fix PHP Fatal bug in tax request error handling
+* Integrate with WooCommerce Shipment Tracking extension
+* Add Conditional Shipping and Payments compatibility
 
 = 1.11.0 =
 * Fix bug with TOS acceptance on WordPress Multisite

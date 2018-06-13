@@ -301,10 +301,15 @@ class WC_WooMercadoPago_SubscriptionGateway extends WC_Payment_Gateway {
 				'type' => 'title'
 			),
 			'gateway_discount' => array(
-				'title' => __( 'Discount by Gateway', 'woocommerce-mercadopago' ),
+				'title' => __( 'Discount/Fee by Gateway', 'woocommerce-mercadopago' ),
 				'type' => 'number',
-				'description' => __( 'Give a percentual (0 to 100) discount for your customers if they use this payment gateway.', 'woocommerce-mercadopago' ),
-				'default' => '0'
+				'description' => __( 'Give a percentual (-99 to 99) discount or fee for your customers if they use this payment gateway. Use negative for fees, positive for discounts.', 'woocommerce-mercadopago' ),
+				'default' => '0',
+				'custom_attributes' => array(
+					'step' 	=> '0.01',
+					'min'	=> '-99',
+					'max' => '99'
+				) 
 			)
 		);
 
@@ -338,7 +343,7 @@ class WC_WooMercadoPago_SubscriptionGateway extends WC_Payment_Gateway {
 					if ( ! is_numeric( $value ) || empty ( $value ) ) {
 						$this->settings[$key] = 0;
 					} else {
-						if ( $value < 0 || $value >= 100 || empty ( $value ) ) {
+						if ( $value < -99 || $value > 99 || empty ( $value ) ) {
 							$this->settings[$key] = 0;
 						} else {
 							$this->settings[$key] = $value;
@@ -463,15 +468,17 @@ class WC_WooMercadoPago_SubscriptionGateway extends WC_Payment_Gateway {
 			?>
 			<script src="https://secure.mlstatic.com/modules/javascript/analytics.js"></script>
 			<script type="text/javascript">
-				var MA = ModuleAnalytics;
-				MA.setToken( '<?php echo $client_id; ?>' );
-				MA.setPlatform( 'WooCommerce' );
-				MA.setPlatformVersion( '<?php echo $w->version; ?>' );
-				MA.setModuleVersion( '<?php echo WC_Woo_Mercado_Pago_Module::VERSION; ?>' );
-				MA.setPayerEmail( '<?php echo ( $logged_user_email != null ? $logged_user_email : "" ); ?>' );
-				MA.setUserLogged( <?php echo ( empty( $logged_user_email ) ? 0 : 1 ); ?> );
-				MA.setInstalledModules( '<?php echo $payments; ?>' );
-				MA.post();
+				try {
+					var MA = ModuleAnalytics;
+					MA.setToken( '<?php echo $client_id; ?>' );
+					MA.setPlatform( 'WooCommerce' );
+					MA.setPlatformVersion( '<?php echo $w->version; ?>' );
+					MA.setModuleVersion( '<?php echo WC_Woo_Mercado_Pago_Module::VERSION; ?>' );
+					MA.setPayerEmail( '<?php echo ( $logged_user_email != null ? $logged_user_email : "" ); ?>' );
+					MA.setUserLogged( <?php echo ( empty( $logged_user_email ) ? 0 : 1 ); ?> );
+					MA.setInstalledModules( '<?php echo $payments; ?>' );
+					MA.post();
+				} catch(err) {}
 			</script>
 			<?php
 
@@ -489,11 +496,13 @@ class WC_WooMercadoPago_SubscriptionGateway extends WC_Payment_Gateway {
 			$this->write_log( __FUNCTION__, 'updating order of ID ' . $order_id );
 			echo '<script src="https://secure.mlstatic.com/modules/javascript/analytics.js"></script>
 			<script type="text/javascript">
-				var MA = ModuleAnalytics;
-				MA.setToken( ' . $client_id . ' );
-				MA.setPaymentType("subscription");
-				MA.setCheckoutType("subscription");
-				MA.put();
+				try {
+					var MA = ModuleAnalytics;
+					MA.setToken( ' . $client_id . ' );
+					MA.setPaymentType("subscription");
+					MA.setCheckoutType("subscription");
+					MA.put();
+				} catch(err) {}
 			</script>';
 
 		}
@@ -543,6 +552,11 @@ class WC_WooMercadoPago_SubscriptionGateway extends WC_Payment_Gateway {
 
 		$order = wc_get_order( $order_id );
 		$url = $this->create_url( $order );
+		
+		$banner_url = get_option( '_mp_custom_banner' );
+		if ( ! isset( $banner_url ) || empty( $banner_url ) ) {
+			$banner_url = $this->site_data['checkout_banner'];
+		}
 
 		if ( 'modal' == $this->method && $url ) {
 
@@ -556,7 +570,7 @@ class WC_WooMercadoPago_SubscriptionGateway extends WC_Payment_Gateway {
 					<script type="text/javascript">
 						(function() { $MPC.openCheckout({ url: "' . esc_url( $url ) . '", mode: "modal" }); })();
 					</script>';
-			$html = '<img width="468" height="60" src="' . $this->site_data['checkout_banner'] . '">';
+			$html = '<img width="468" height="60" src="' . $banner_url . '">';
 			$html = '<p></p><p>' . wordwrap(
 						__( 'Thank you for your order. Please, proceed with your payment clicking in the bellow button.', 'woocommerce-mercadopago' ),
 						60, '<br>'
@@ -574,7 +588,7 @@ class WC_WooMercadoPago_SubscriptionGateway extends WC_Payment_Gateway {
 			$this->write_log( __FUNCTION__, 'embedding Mercado Pago iframe.' );
 
 			// ===== The checkout is made by rendering Mercado Pago form within a iframe =====
-			$html = '<img width="468" height="60" src="' . $this->site_data['checkout_banner'] . '">';
+			$html = '<img width="468" height="60" src="' . $banner_url . '">';
 			$html = '<p></p><p>' . wordwrap(
 						__( 'Thank you for your order. Proceed with your payment completing the following information.', 'woocommerce-mercadopago' ),
 						60, '<br>'
@@ -790,26 +804,24 @@ class WC_WooMercadoPago_SubscriptionGateway extends WC_Payment_Gateway {
 
 	// Display the discount in payment method title.
 	public function get_payment_method_title_subscription( $title, $id ) {
-
 		if ( ! is_checkout() && ! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
 			return $title;
 		}
-
 		if ( $title != $this->title || $this->gateway_discount == 0 ) {
 			return $title;
 		}
-
-		$total = (float) WC()->cart->subtotal;
-		if ( is_numeric( $this->gateway_discount ) ) {
-			if ( $this->gateway_discount >= 0 && $this->gateway_discount < 100 ) {
-				$price_percent = $this->gateway_discount / 100;
-				if ( $price_percent > 0 ) {
-					$title .= ' (' . __( 'Discount of', 'woocommerce-mercadopago' ) . ' ' .
-						strip_tags( wc_price( $total * $price_percent ) ) . ')';
-				}
-			}
+		if ( ! is_numeric( $this->gateway_discount ) || $this->gateway_discount < -99 || $this->gateway_discount > 99 ) {
+			return $title;
 		}
-
+		$total = (float) WC()->cart->subtotal;
+		$price_percent = $this->gateway_discount / 100;
+		if ( $price_percent > 0 ) {
+			$title .= ' (' . __( 'Discount of', 'woocommerce-mercadopago' ) . ' ' .
+				strip_tags( wc_price( $total * $price_percent ) ) . ')';
+		} elseif ( $price_percent < 0 ) {
+			$title .= ' (' . __( 'Fee of', 'woocommerce-mercadopago' ) . ' ' .
+				strip_tags( wc_price( -$total * $price_percent ) ) . ')';
+		}
 		return $title;
 	}
 

@@ -10,15 +10,12 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     3.3.0
+ * @see https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce/Templates
+ * @version 3.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 if ( ! is_ajax() ) {
 	do_action( 'woocommerce_review_order_before_payment' );
@@ -33,7 +30,7 @@ if ( ! is_ajax() ) {
 					wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $gateway ) );
 				}
 			} else {
-				echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__( 'Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', 'woocommerce' ) : esc_html__( 'Por favor, complete sus datos anteriores para ver los métodos de pago disponibles.', 'woocommerce' ) ) . '</li>'; // @codingStandardsIgnoreLine
+				echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__( 'Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', 'woocommerce' ) : esc_html__( 'Please fill in your details above to see available payment methods.', 'woocommerce' ) ) . '</li>'; // @codingStandardsIgnoreLine
 			}
 			?>
 		</ul>
@@ -41,7 +38,7 @@ if ( ! is_ajax() ) {
 	<div class="form-row place-order">
 		<noscript>
 			<?php esc_html_e( 'Como su navegador no admite JavaScript, o está desactivado, asegúrese de hacer clic en <em>Actualizar total</em> botón antes de hacer su pedido. Se le puede cobrar un monto superior al indicado anteriormente si no lo hace.', 'woocommerce' ); ?>
-			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Actualizar total', 'woocommerce' ); ?></button>
+			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Actualizar totales', 'woocommerce' ); ?></button>
 		</noscript>
 
 		<?php wc_get_template( 'checkout/terms.php' ); ?>
@@ -52,7 +49,7 @@ if ( ! is_ajax() ) {
 
 		<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
 
-		<?php wp_nonce_field( 'woocommerce-process_checkout' ); ?>
+		<?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
 	</div>
 </div>
 <?php

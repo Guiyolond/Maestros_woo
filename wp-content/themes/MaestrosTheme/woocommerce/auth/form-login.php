@@ -12,16 +12,12 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates/Auth
- * @version 3.3.0
+ * @version 3.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
-?>
-
-<?php do_action( 'woocommerce_auth_page_header' ); ?>
+do_action( 'woocommerce_auth_page_header' ); ?>
 
 <h1>
 	<?php
@@ -35,22 +31,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p>
 	<?php
 	/* translators: %1$s: app name, %2$s: URL */
-	echo wp_kses_post( sprintf( __( 'Para conectarse a %1$s, debe iniciar sesión. Inicie sesión en su tienda a continuación, o <a href="%2$s">cancele y regresse a %1$s</a>', 'woocommerce' ), esc_html( wc_clean( $app_name ) ), esc_url( $return_url ) ) );
+	echo wp_kses_post( sprintf( __( 'Para conectarte a %1$s debes iniciar sesión. Inicia sesión en tu tienda a continuación, o <a href="%2$s">cancela y regresa %1$s</a>', 'woocommerce' ), esc_html( wc_clean( $app_name ) ), esc_url( $return_url ) ) );
 	?>
 </p>
 
 <form method="post" class="wc-auth-login">
 	<p class="form-row form-row-wide">
-		<label for="username"><?php esc_html_e( '', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input placeholder="Usuario o email" type="text" class="input-text" name="username" id="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( $_POST['username'] ) : ''; ?>" /><?php //@codingStandardsIgnoreLine ?>
+		<label for="username"><?php esc_html_e( 'Username or email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+		<input type="text" class="input-text" name="username" id="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( $_POST['username'] ) : ''; ?>" /><?php //@codingStandardsIgnoreLine ?>
 	</p>
 	<p class="form-row form-row-wide">
-		<label for="password"><?php esc_html_e( '', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input placeholder="Contraseña" class="input-text" type="password" name="password" id="password" />
+		<label for="password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+		<input class="input-text" type="password" name="password" id="password" />
 	</p>
 	<p class="wc-auth-actions">
-		<?php wp_nonce_field( 'woocommerce-login' ); ?>
-		<button type="submit" class="btn btn-dorado wc-auth-login-button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><?php esc_html_e( 'Iniciar sesión', 'woocommerce' ); ?></button>
+		<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
+		<button type="submit" class="button button-large button-primary wc-auth-login-button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><?php esc_html_e( 'Login', 'woocommerce' ); ?></button>
 		<input type="hidden" name="redirect" value="<?php echo esc_url( $redirect_url ); ?>" />
 	</p>
 </form>
